@@ -1,4 +1,4 @@
-package org.assignmentTracker.repositoryTest.impl;
+package org.assignmentTracker.repository.user.impl;
 
 import org.assignmentTracker.entity.User;
 import org.assignmentTracker.repository.user.IUserRepository;
