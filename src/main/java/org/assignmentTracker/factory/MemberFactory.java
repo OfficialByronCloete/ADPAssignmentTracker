@@ -12,13 +12,13 @@ import org.assignmentTracker.util.Helper;
 
 public class MemberFactory {
 
-    public static Member createMember (String assignment_id){
+    public static Member createMember (int assignment_id){
 
-        String id = Integer.toString(Helper.generateID()) ;
+        int id = Helper.generateID();
         Member member = new Member.Builder()
                 .setId(id)
                 .setAssignment_id(assignment_id)
-                .builder();
+                .build();
         return member;
 
     }
