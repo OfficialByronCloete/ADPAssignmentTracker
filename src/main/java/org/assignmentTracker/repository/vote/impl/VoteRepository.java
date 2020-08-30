@@ -1,4 +1,4 @@
-package org.assignmentTracker.repositoryTest.impl;
+package org.assignmentTracker.repository.vote.impl;
 
 import org.assignmentTracker.entity.Vote;
 import org.assignmentTracker.repository.vote.IVoteRepository;
