@@ -1,7 +1,6 @@
 package org.assignmentTracker.repository.admin.impl;
 
 import org.assignmentTracker.entity.Admin;
-import org.assignmentTracker.entity.Member;
 import org.assignmentTracker.repository.admin.IAdminRepository;
 import java.util.HashSet;
 import java.util.Set;

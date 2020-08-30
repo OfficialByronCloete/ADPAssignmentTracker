@@ -19,15 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcd2deed-e638-40e9-9855-283851ff0c4f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/assignmentTracker/repository/admin/IAdminRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/assignmentTracker/repository/admin/impl/AdminRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/assignmentTracker/repositoryTest/AdminRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="fcd2deed-e638-40e9-9855-283851ff0c4f" name="Default Changelist" comment="Admin Repository added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/assignmentTracker/factory/AssignmentFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/assignmentTracker/factory/AssignmentFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +44,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager" selected="JUnit.AdminRepositoryTest">
     <configuration name="AdminRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -162,35 +156,56 @@
       <option name="presentableId" value="Default" />
       <updated>1598705723300</updated>
     </task>
+    <task id="LOCAL-00001" summary="Admin Repository added">
+      <created>1598817031892</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598817031892</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Admin Repository added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Admin Repository added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser" timestamp="1598812879953">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1598812879953" />
-    <state width="746" height="210" key="GridCell.Tab.0.bottom" timestamp="1598816516568">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1598817019879">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598816516568" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598817019879" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1598705787451" />
-    <state width="746" height="210" key="GridCell.Tab.0.center" timestamp="1598816516568">
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1598817019879">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1598816516568" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1598817019879" />
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1598705787450" />
-    <state width="746" height="210" key="GridCell.Tab.0.left" timestamp="1598816516568">
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1598817019878">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1598816516568" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1598817019878" />
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1598705787450" />
-    <state width="746" height="210" key="GridCell.Tab.0.right" timestamp="1598816516568">
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1598817019879">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1598816516568" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1598817019879" />
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1598705787450" />
   </component>
 </project>

@@ -18,6 +18,13 @@ import java.util.Date;
 
 import static org.assignmentTracker.factory.UserFactory.createUser;
 
+/**
+ * @author Brandon Villet
+ * student number: 214056791
+ * Desc: Interface for admin repository
+ * Date: 30 August 2020
+ */
+
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class AdminRepositoryTest extends TestCase {
 
