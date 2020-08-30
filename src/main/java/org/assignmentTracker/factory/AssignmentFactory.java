@@ -23,7 +23,7 @@ public class AssignmentFactory {
                 .setName(name)
                 .setSubject(subject)
                 .setDateAssigned(dateAssigned)
-                .setAdmins(admins)
+                 .setAdmins(admins)
                 .setMembers(members)
                 .setCreator(creator)
                 .build();
