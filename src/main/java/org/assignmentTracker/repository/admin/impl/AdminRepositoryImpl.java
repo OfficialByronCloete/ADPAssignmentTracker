@@ -5,6 +5,12 @@ import org.assignmentTracker.repository.admin.IAdminRepository;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * @author Brandon Villet
+ * student number: 214056791
+ * Desc: Interface for admin repository
+ * Date: 30 August 2020
+ */
 
 public class AdminRepositoryImpl implements IAdminRepository {
     private static AdminRepositoryImpl repository = null;
