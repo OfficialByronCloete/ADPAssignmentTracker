@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="fcd2deed-e638-40e9-9855-283851ff0c4f" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/repository/group/GroupRepository.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/repository/group/impl/GroupRepositoryImpl.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/repository/poll/PollRepository.class" afterDir="false" />
@@ -16,6 +23,8 @@
       <change beforePath="$PROJECT_DIR$/target/test-classes/org/assignmentTracker/factoryTest/GroupFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/assignmentTracker/factoryTest/GroupFactoryTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/org/assignmentTracker/repositoryTest/NoteRepositoryImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/assignmentTracker/repositoryTest/NoteRepositoryImplTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/org/assignmentTracker/repositoryTest/SubjectRepositoryImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/assignmentTracker/repositoryTest/SubjectRepositoryImplTest.class" afterDir="false" />
+=======
+>>>>>>> 9c7a2a7b48f3a032708aa523764828611fc80923
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,19 +34,19 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1gm31INIYGuiMAsv0ZnW8zGSW3I" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="1" id="Add" />
+      </MavenGeneralSettings>
+    </option>
   </component>
+  <component name="ProjectId" id="1gm31INIYGuiMAsv0ZnW8zGSW3I" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -50,18 +59,11 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="org.assignmentTracker.repositoryTest" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="org.assignmentTracker.repository.note" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+<<<<<<< HEAD
   </component>
   <component name="RunManager" selected="JUnit.NoteRepositoryImplTest">
     <configuration name="LectureRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -149,6 +151,9 @@
       </list>
     </recent_temporary>
   </component>
+=======
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+>>>>>>> 9c7a2a7b48f3a032708aa523764828611fc80923
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -159,14 +164,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598705723300</updated>
+<<<<<<< HEAD
       <workItem from="1598808404506" duration="5420000" />
       <workItem from="1598858288139" duration="606000" />
+=======
+>>>>>>> 9c7a2a7b48f3a032708aa523764828611fc80923
     </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
+<<<<<<< HEAD
   <component name="VcsManagerConfiguration">
     <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
@@ -228,5 +238,17 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="417" y="146" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.768@0.0.1366.768" timestamp="1598737130868" />
+=======
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+>>>>>>> 9c7a2a7b48f3a032708aa523764828611fc80923
   </component>
 </project>

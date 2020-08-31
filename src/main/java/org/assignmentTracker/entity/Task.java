@@ -1,6 +1,10 @@
 package org.assignmentTracker.entity;
 
-import java.util.List;
+/**
+ *
+ * @author: Caleb Ruiters
+ * student number: 215169751
+ * */
 
 public class Task {
     private int taskId, assignmentId, memberId;
@@ -56,6 +60,15 @@ public class Task {
             task.students = this.students;
 
             return build();
+        }
+
+        public Builder copy(Task task) {
+            task.assignmentId = this.assignmentId;
+            task.memberId = this.memberId;
+            task.taskId = this.taskId;
+            task.students = this.students;
+
+            return this;
         }
     }
 
