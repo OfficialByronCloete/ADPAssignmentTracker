@@ -62,6 +62,7 @@
       <recent name="" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="JUnit.ChoiceRepositoryTest">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
@@ -75,6 +76,10 @@
       </method>
     </configuration>
     <configuration name="ChoiceRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+=======
+  <component name="RunManager" selected="JUnit.AdminRepositoryTest">
+    <configuration name="AdminRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+>>>>>>> 9574abd5ea0b0cd77b399cdbb4e50297f736f790
       <module name="ADPAssignmentTracker" />
       <extension name="coverage">
         <pattern>
@@ -83,14 +88,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.assignmentTracker.repositoryTest" />
+<<<<<<< HEAD
       <option name="MAIN_CLASS_NAME" value="org.assignmentTracker.repositoryTest.ChoiceRepositoryTest" />
+=======
+      <option name="MAIN_CLASS_NAME" value="org.assignmentTracker.repositoryTest.AdminRepositoryTest" />
+>>>>>>> 9574abd5ea0b0cd77b399cdbb4e50297f736f790
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="ChoiceRepositoryTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ADPAssignmentTracker" />
+=======
+    <configuration name="LectureRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ADPAssignmentTracker-1" />
+>>>>>>> 9574abd5ea0b0cd77b399cdbb4e50297f736f790
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.assignmentTracker.repositoryTest.*" />
@@ -98,9 +112,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.assignmentTracker.repositoryTest" />
+<<<<<<< HEAD
       <option name="MAIN_CLASS_NAME" value="org.assignmentTracker.repositoryTest.ChoiceRepositoryTest" />
       <option name="METHOD_NAME" value="create" />
       <option name="TEST_OBJECT" value="method" />
+=======
+      <option name="MAIN_CLASS_NAME" value="org.assignmentTracker.repositoryTest.LectureRepositoryImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+>>>>>>> 9574abd5ea0b0cd77b399cdbb4e50297f736f790
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -151,15 +170,24 @@
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="JUnit.ChoiceRepositoryTest" />
         <item itemvalue="JUnit.ChoiceRepositoryTest.getAll" />
         <item itemvalue="JUnit.ChoiceRepositoryTest.delete" />
         <item itemvalue="JUnit.ChoiceRepositoryTest.read" />
         <item itemvalue="JUnit.ChoiceRepositoryTest.create" />
+=======
+        <item itemvalue="JUnit.AdminRepositoryTest" />
+        <item itemvalue="JUnit.SubjectRepositoryImplTest" />
+        <item itemvalue="JUnit.NoteRepositoryImplTest" />
+        <item itemvalue="JUnit.UserRepositoryTest" />
+        <item itemvalue="JUnit.LectureRepositoryImplTest" />
+>>>>>>> 9574abd5ea0b0cd77b399cdbb4e50297f736f790
       </list>
     </recent_temporary>
   </component>
