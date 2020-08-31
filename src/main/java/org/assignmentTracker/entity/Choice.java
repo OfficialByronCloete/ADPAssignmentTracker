@@ -27,9 +27,9 @@ public class Choice {
     @Override
     public String toString() {
         return "Choice{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", votes=" + votes +
+                "id=" + this.id +
+                ", name='" + this.name + '\'' +
+                ", votes=" + this.votes +
                 '}';
     }
     public static class Builder {

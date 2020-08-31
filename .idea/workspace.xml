@@ -4,83 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fcd2deed-e638-40e9-9855-283851ff0c4f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/assignmentTracker/entity/Choice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/assignmentTracker/entity/Choice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/assignmentTracker/factory/ChoiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/assignmentTracker/factory/ChoiceFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/assignmentTracker/factoryTest/AdminFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/assignmentTracker/factoryTest/AdminFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/assignmentTracker/factoryTest/ChoiceFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/assignmentTracker/factoryTest/ChoiceFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/assignmentTracker/factoryTest/UserFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/assignmentTracker/factoryTest/UserFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Assignment$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Assignment$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Assignment$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Assignment$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Assignment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Assignment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Choice$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Choice$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Choice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Choice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Group$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Group$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Group.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Group.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Member$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Member$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Member$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Member$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Member.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Note$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Note$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Note$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Note$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Note.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Note.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Student$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Student$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Student$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Student$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Subject$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Subject$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Subject$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Subject$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Subject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Subject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Task$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Task$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Task$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Task$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Task.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Vote$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Vote$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Vote$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Vote$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Vote.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/entity/Vote.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/factory/AdminFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/factory/AdminFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/factory/AssignmentFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/factory/AssignmentFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/factory/ChoiceFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/factory/ChoiceFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/factory/GroupFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/factory/GroupFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/factory/LectureFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/factory/LectureFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/factory/MemberFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/factory/MemberFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/factory/NoteFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/factory/NoteFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/factory/PollFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/factory/PollFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/factory/SubjectFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/factory/SubjectFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/factory/TaskFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/factory/TaskFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/factory/UserFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/factory/UserFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/factory/VoteFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/factory/VoteFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/repository/assignment/impl/AssignmentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/repository/assignment/impl/AssignmentRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/repository/lecture/impl/LectureRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/repository/lecture/impl/LectureRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/repository/member/impl/MemberRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/repository/member/impl/MemberRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/repository/note/impl/NoteRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/repository/note/impl/NoteRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/repository/subject/impl/SubjectRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/repository/subject/impl/SubjectRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/repository/user/impl/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/repository/user/impl/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/repository/vote/impl/VoteRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/assignmentTracker/repository/vote/impl/VoteRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/assignmentTracker/factoryTest/AdminFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/assignmentTracker/factoryTest/AdminFactoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/assignmentTracker/repository/choice/ChoiceRepository.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/org/assignmentTracker/factoryTest/ChoiceFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/assignmentTracker/factoryTest/ChoiceFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/assignmentTracker/factoryTest/GroupFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/assignmentTracker/factoryTest/GroupFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/assignmentTracker/factoryTest/SubjectFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/assignmentTracker/factoryTest/SubjectFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/assignmentTracker/factoryTest/UserFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/assignmentTracker/factoryTest/UserFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/assignmentTracker/repositoryTest/AssignmentRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/assignmentTracker/repositoryTest/AssignmentRepositoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/assignmentTracker/repositoryTest/SubjectRepositoryImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/assignmentTracker/repositoryTest/SubjectRepositoryImplTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/assignmentTracker/repositoryTest/VoteRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/assignmentTracker/repositoryTest/VoteRepositoryTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,9 +22,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -135,7 +67,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ChoiceFactoryTest.choiceFactory">
+  <component name="RunManager" selected="JUnit.ChoiceRepositoryTest">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -147,55 +79,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AdminFactoryTest.createAdmin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ChoiceRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ADPAssignmentTracker" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.assignmentTracker.factoryTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.assignmentTracker.factoryTest" />
-      <option name="MAIN_CLASS_NAME" value="org.assignmentTracker.factoryTest.AdminFactoryTest" />
-      <option name="METHOD_NAME" value="createAdmin" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ChoiceFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ADPAssignmentTracker" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.assignmentTracker.factoryTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.assignmentTracker.factoryTest" />
-      <option name="MAIN_CLASS_NAME" value="org.assignmentTracker.factoryTest.ChoiceFactoryTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ChoiceFactoryTest.choiceFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ADPAssignmentTracker" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.assignmentTracker.factoryTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.assignmentTracker.factoryTest" />
-      <option name="MAIN_CLASS_NAME" value="org.assignmentTracker.factoryTest.ChoiceFactoryTest" />
-      <option name="METHOD_NAME" value="choiceFactory" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SubjectRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ADPAssignmentTracker-1" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.assignmentTracker.repositoryTest.*" />
@@ -203,23 +88,71 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.assignmentTracker.repositoryTest" />
-      <option name="MAIN_CLASS_NAME" value="org.assignmentTracker.repositoryTest.SubjectRepositoryImplTest" />
+      <option name="MAIN_CLASS_NAME" value="org.assignmentTracker.repositoryTest.ChoiceRepositoryTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserFactoryTest.createUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ChoiceRepositoryTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ADPAssignmentTracker" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.assignmentTracker.factoryTest.*" />
+          <option name="PATTERN" value="org.assignmentTracker.repositoryTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.assignmentTracker.factoryTest" />
-      <option name="MAIN_CLASS_NAME" value="org.assignmentTracker.factoryTest.UserFactoryTest" />
-      <option name="METHOD_NAME" value="createUser" />
+      <option name="PACKAGE_NAME" value="org.assignmentTracker.repositoryTest" />
+      <option name="MAIN_CLASS_NAME" value="org.assignmentTracker.repositoryTest.ChoiceRepositoryTest" />
+      <option name="METHOD_NAME" value="create" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChoiceRepositoryTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ADPAssignmentTracker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.assignmentTracker.repositoryTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.assignmentTracker.repositoryTest" />
+      <option name="MAIN_CLASS_NAME" value="org.assignmentTracker.repositoryTest.ChoiceRepositoryTest" />
+      <option name="METHOD_NAME" value="delete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChoiceRepositoryTest.getAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ADPAssignmentTracker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.assignmentTracker.repositoryTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.assignmentTracker.repositoryTest" />
+      <option name="MAIN_CLASS_NAME" value="org.assignmentTracker.repositoryTest.ChoiceRepositoryTest" />
+      <option name="METHOD_NAME" value="getAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChoiceRepositoryTest.read" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ADPAssignmentTracker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.assignmentTracker.repositoryTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.assignmentTracker.repositoryTest" />
+      <option name="MAIN_CLASS_NAME" value="org.assignmentTracker.repositoryTest.ChoiceRepositoryTest" />
+      <option name="METHOD_NAME" value="read" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -227,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ChoiceFactoryTest.choiceFactory" />
-        <item itemvalue="JUnit.UserFactoryTest.createUser" />
-        <item itemvalue="JUnit.AdminFactoryTest.createAdmin" />
-        <item itemvalue="JUnit.ChoiceFactoryTest" />
-        <item itemvalue="JUnit.SubjectRepositoryImplTest" />
+        <item itemvalue="JUnit.ChoiceRepositoryTest" />
+        <item itemvalue="JUnit.ChoiceRepositoryTest.getAll" />
+        <item itemvalue="JUnit.ChoiceRepositoryTest.delete" />
+        <item itemvalue="JUnit.ChoiceRepositoryTest.read" />
+        <item itemvalue="JUnit.ChoiceRepositoryTest.create" />
       </list>
     </recent_temporary>
   </component>
@@ -247,7 +180,7 @@
       <option name="presentableId" value="Default" />
       <updated>1598705723300</updated>
       <workItem from="1598808404506" duration="3566000" />
-      <workItem from="1598825993268" duration="9332000" />
+      <workItem from="1598825993268" duration="12314000" />
     </task>
     <servers />
   </component>
@@ -257,11 +190,41 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:/home/anga/IdeaProjects/ADPAssignmentTracker/src/main/java/org/assignmentTracker/repository" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
           </value>
         </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
       </map>
     </option>
   </component>
@@ -287,41 +250,42 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="479" y="244" width="437" height="239" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.728@0.0.1366.728" timestamp="1598810513423" />
-    <state width="1248" height="159" key="GridCell.Tab.0.bottom" timestamp="1598835069360">
+    <state width="1248" height="159" key="GridCell.Tab.0.bottom" timestamp="1598838769208">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state width="1323" height="437" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598812495885" />
     <state width="1367" height="198" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1598740590412" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1598705787451" />
-    <state width="1248" height="159" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1598835069360" />
-    <state width="1248" height="159" key="GridCell.Tab.0.center" timestamp="1598835069359">
+    <state width="1248" height="159" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1598838769208" />
+    <state width="1248" height="159" key="GridCell.Tab.0.center" timestamp="1598838769206">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state width="1323" height="437" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1598812495885" />
     <state width="1367" height="198" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1598740590411" />
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1598705787450" />
-    <state width="1248" height="159" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1598835069359" />
-    <state width="1248" height="159" key="GridCell.Tab.0.left" timestamp="1598835069359">
+    <state width="1248" height="159" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1598838769206" />
+    <state width="1248" height="159" key="GridCell.Tab.0.left" timestamp="1598838769205">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state width="1323" height="437" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1598812495884" />
     <state width="1367" height="198" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1598740590410" />
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1598705787450" />
-    <state width="1248" height="159" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1598835069359" />
-    <state width="1248" height="159" key="GridCell.Tab.0.right" timestamp="1598835069360">
+    <state width="1248" height="159" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1598838769205" />
+    <state width="1248" height="159" key="GridCell.Tab.0.right" timestamp="1598838769207">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state width="1323" height="437" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1598812495885" />
     <state width="1367" height="198" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1598740590411" />
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1598705787450" />
-    <state width="1248" height="159" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1598835069360" />
+    <state width="1248" height="159" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1598838769207" />
     <state x="213" y="19" key="Maven.ArtifactSearchDialog" timestamp="1598811395473">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="213" y="19" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1598811395473" />
-    <state x="417" y="146" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1598737130868">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="467" y="168" width="672" height="497" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1598836715644">
+      <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="417" y="146" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.768@0.0.1366.768" timestamp="1598737130868" />
+    <state x="467" y="168" width="672" height="497" key="com.intellij.testIntegration.createTest.CreateTestDialog/72.27.1294.741@72.27.1294.741" timestamp="1598836715644" />
   </component>
 </project>
