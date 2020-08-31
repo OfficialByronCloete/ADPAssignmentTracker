@@ -8,7 +8,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcd2deed-e638-40e9-9855-283851ff0c4f" name="Default Changelist" comment="" />
+    <list default="true" id="fcd2deed-e638-40e9-9855-283851ff0c4f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +27,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/.idea/workspace.xml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -62,24 +67,8 @@
       <recent name="" />
     </key>
   </component>
-<<<<<<< HEAD
-  <component name="RunManager" selected="JUnit.ChoiceRepositoryTest">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ChoiceRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-=======
   <component name="RunManager" selected="JUnit.AdminRepositoryTest">
     <configuration name="AdminRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
->>>>>>> 9574abd5ea0b0cd77b399cdbb4e50297f736f790
       <module name="ADPAssignmentTracker" />
       <extension name="coverage">
         <pattern>
@@ -88,54 +77,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.assignmentTracker.repositoryTest" />
-<<<<<<< HEAD
-      <option name="MAIN_CLASS_NAME" value="org.assignmentTracker.repositoryTest.ChoiceRepositoryTest" />
-=======
       <option name="MAIN_CLASS_NAME" value="org.assignmentTracker.repositoryTest.AdminRepositoryTest" />
->>>>>>> 9574abd5ea0b0cd77b399cdbb4e50297f736f790
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-<<<<<<< HEAD
-    <configuration name="ChoiceRepositoryTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ADPAssignmentTracker" />
-=======
-    <configuration name="LectureRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ADPAssignmentTracker-1" />
->>>>>>> 9574abd5ea0b0cd77b399cdbb4e50297f736f790
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.assignmentTracker.repositoryTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.assignmentTracker.repositoryTest" />
-<<<<<<< HEAD
-      <option name="MAIN_CLASS_NAME" value="org.assignmentTracker.repositoryTest.ChoiceRepositoryTest" />
-      <option name="METHOD_NAME" value="create" />
-      <option name="TEST_OBJECT" value="method" />
-=======
-      <option name="MAIN_CLASS_NAME" value="org.assignmentTracker.repositoryTest.LectureRepositoryImplTest" />
-      <option name="TEST_OBJECT" value="class" />
->>>>>>> 9574abd5ea0b0cd77b399cdbb4e50297f736f790
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ChoiceRepositoryTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ADPAssignmentTracker" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.assignmentTracker.repositoryTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.assignmentTracker.repositoryTest" />
-      <option name="MAIN_CLASS_NAME" value="org.assignmentTracker.repositoryTest.ChoiceRepositoryTest" />
-      <option name="METHOD_NAME" value="delete" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -170,24 +113,30 @@
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LectureRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ADPAssignmentTracker-1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.assignmentTracker.repositoryTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.assignmentTracker.repositoryTest" />
+      <option name="MAIN_CLASS_NAME" value="org.assignmentTracker.repositoryTest.LectureRepositoryImplTest" />
+      <option name="METHOD_NAME" value="create" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-<<<<<<< HEAD
-        <item itemvalue="JUnit.ChoiceRepositoryTest" />
         <item itemvalue="JUnit.ChoiceRepositoryTest.getAll" />
-        <item itemvalue="JUnit.ChoiceRepositoryTest.delete" />
         <item itemvalue="JUnit.ChoiceRepositoryTest.read" />
-        <item itemvalue="JUnit.ChoiceRepositoryTest.create" />
-=======
         <item itemvalue="JUnit.AdminRepositoryTest" />
-        <item itemvalue="JUnit.SubjectRepositoryImplTest" />
-        <item itemvalue="JUnit.NoteRepositoryImplTest" />
-        <item itemvalue="JUnit.UserRepositoryTest" />
         <item itemvalue="JUnit.LectureRepositoryImplTest" />
->>>>>>> 9574abd5ea0b0cd77b399cdbb4e50297f736f790
       </list>
     </recent_temporary>
   </component>
@@ -205,6 +154,14 @@
       <workItem from="1598808404506" duration="3566000" />
       <workItem from="1598825993268" duration="12683000" />
     </task>
+    <task id="LOCAL-00001" summary="Added Choice repo and tests">
+      <created>1598863152481</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598863152481</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +207,11 @@
         <entry key="1" value="TOOL_WINDOW" />
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added Choice repo and tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Choice repo and tests" />
   </component>
   <component name="WindowStateProjectService">
     <state x="758" y="63" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1598835263129">
@@ -273,6 +235,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="479" y="244" width="437" height="239" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.728@0.0.1366.728" timestamp="1598810513423" />
+    <state x="388" y="266" width="652" height="269" key="Github.CreatePullRequestDialog" timestamp="1598863494651">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="388" y="266" width="652" height="269" key="Github.CreatePullRequestDialog/72.27.1294.741@72.27.1294.741" timestamp="1598863494651" />
     <state width="1248" height="159" key="GridCell.Tab.0.bottom" timestamp="1598839328895">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
@@ -305,10 +271,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="213" y="19" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1598811395473" />
+    <state x="314" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1598863304081">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="314" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1294.741@72.27.1294.741" timestamp="1598863304081" />
     <state x="467" y="168" width="672" height="497" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1598836715644">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="417" y="146" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.768@0.0.1366.768" timestamp="1598737130868" />
     <state x="467" y="168" width="672" height="497" key="com.intellij.testIntegration.createTest.CreateTestDialog/72.27.1294.741@72.27.1294.741" timestamp="1598836715644" />
+    <state x="395" y="287" width="637" height="228" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1598863434245">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="395" y="287" width="637" height="228" key="git4idea.remote.GitConfigureRemotesDialog/72.27.1294.741@72.27.1294.741" timestamp="1598863434245" />
   </component>
 </project>
