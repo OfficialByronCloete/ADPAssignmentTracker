@@ -49,7 +49,22 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SubjectRepositoryImplTest">
+  <component name="RunManager" selected="JUnit.AdminRepositoryTest">
+    <configuration name="AdminRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ADPAssignmentTracker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.assignmentTracker.repositoryTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.assignmentTracker.repositoryTest" />
+      <option name="MAIN_CLASS_NAME" value="org.assignmentTracker.repositoryTest.AdminRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LectureRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ADPAssignmentTracker-1" />
       <extension name="coverage">
@@ -61,22 +76,6 @@
       <option name="PACKAGE_NAME" value="org.assignmentTracker.repositoryTest" />
       <option name="MAIN_CLASS_NAME" value="org.assignmentTracker.repositoryTest.LectureRepositoryImplTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LectureRepositoryImplTest.a_create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ADPAssignmentTracker-1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.assignmentTracker.repositoryTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.assignmentTracker.repositoryTest" />
-      <option name="MAIN_CLASS_NAME" value="org.assignmentTracker.repositoryTest.LectureRepositoryImplTest" />
-      <option name="METHOD_NAME" value="a_create" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -124,15 +123,16 @@
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AdminRepositoryTest" />
         <item itemvalue="JUnit.SubjectRepositoryImplTest" />
         <item itemvalue="JUnit.NoteRepositoryImplTest" />
         <item itemvalue="JUnit.UserRepositoryTest" />
         <item itemvalue="JUnit.LectureRepositoryImplTest" />
-        <item itemvalue="JUnit.LectureRepositoryImplTest.a_create" />
       </list>
     </recent_temporary>
   </component>
