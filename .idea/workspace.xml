@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="fcd2deed-e638-40e9-9855-283851ff0c4f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/assignmentTracker/entity/Lecture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/assignmentTracker/entity/Lecture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/assignmentTracker/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/assignmentTracker/entity/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/assignmentTracker/factory/LectureFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/assignmentTracker/factory/LectureFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/assignmentTracker/factory/MemberFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/assignmentTracker/factory/MemberFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/assignmentTracker/factoryTest/MemberFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/assignmentTracker/factoryTest/MemberFactoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +26,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1gm31INIYGuiMAsv0ZnW8zGSW3I" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -38,107 +38,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="org.assignmentTracker.repositoryTest" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-  </component>
-  <component name="RunManager" selected="JUnit.LectureRepositoryImplTest">
-    <configuration name="LectureRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ADPAssignmentTracker-1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.assignmentTracker.repositoryTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.assignmentTracker.repositoryTest" />
-      <option name="MAIN_CLASS_NAME" value="org.assignmentTracker.repositoryTest.LectureRepositoryImplTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LectureRepositoryImplTest.a_create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ADPAssignmentTracker-1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.assignmentTracker.repositoryTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.assignmentTracker.repositoryTest" />
-      <option name="MAIN_CLASS_NAME" value="org.assignmentTracker.repositoryTest.LectureRepositoryImplTest" />
-      <option name="METHOD_NAME" value="a_create" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MemberRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ADPAssignmentTracker-1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.assignmentTracker.repositoryTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.assignmentTracker.repositoryTest" />
-      <option name="MAIN_CLASS_NAME" value="org.assignmentTracker.repositoryTest.MemberRepositoryImplTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MemberRepositoryImplTest.a_create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ADPAssignmentTracker-1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.assignmentTracker.repositoryTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.assignmentTracker.repositoryTest" />
-      <option name="MAIN_CLASS_NAME" value="org.assignmentTracker.repositoryTest.MemberRepositoryImplTest" />
-      <option name="METHOD_NAME" value="a_create" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VoteRepositoryTest.test_a_create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ADPAssignmentTracker-1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.assignmentTracker.repositoryTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.assignmentTracker.repositoryTest" />
-      <option name="MAIN_CLASS_NAME" value="org.assignmentTracker.repositoryTest.VoteRepositoryTest" />
-      <option name="METHOD_NAME" value="test_a_create" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.LectureRepositoryImplTest" />
-        <item itemvalue="JUnit.LectureRepositoryImplTest.a_create" />
-        <item itemvalue="JUnit.MemberRepositoryImplTest" />
-        <item itemvalue="JUnit.MemberRepositoryImplTest.a_create" />
-        <item itemvalue="JUnit.VoteRepositoryTest.test_a_create" />
-      </list>
-    </recent_temporary>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -150,36 +58,21 @@
       <option name="presentableId" value="Default" />
       <updated>1598705723300</updated>
     </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="413" y="160" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1598737117967">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="413" y="160" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1366.768@0.0.1366.768" timestamp="1598737117967" />
-    <state width="1367" height="198" key="GridCell.Tab.0.bottom" timestamp="1598740590412">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1367" height="198" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1598740590412" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1598705787451" />
-    <state width="1367" height="198" key="GridCell.Tab.0.center" timestamp="1598740590411">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1367" height="198" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1598740590411" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1598705787450" />
-    <state width="1367" height="198" key="GridCell.Tab.0.left" timestamp="1598740590410">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1367" height="198" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1598740590410" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1598705787450" />
-    <state width="1367" height="198" key="GridCell.Tab.0.right" timestamp="1598740590411">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1367" height="198" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1598740590411" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1598705787450" />
-    <state x="417" y="146" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1598737130868">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="417" y="146" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.768@0.0.1366.768" timestamp="1598737130868" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -5,8 +5,8 @@ public class Group {
 
     private int id;
     private String name;
-    private Lecture lecture;
-    private Subject subject;
+    private String lecture;
+    private String subject;
 
 
     public Group (Builder builder){
@@ -20,8 +20,8 @@ public class Group {
 
         private int id;
         private String name;
-        private Lecture lecture;
-        private Subject subject;
+        private String lecture;
+        private String subject;
 
         public Builder setId(int id) {
             this.id = id;
@@ -34,12 +34,12 @@ public class Group {
             return this;
         }
 
-        public Builder setLecture(Lecture lecture) {
+        public Builder setLecture(String lecture) {
             this.lecture = lecture;
             return this;
         }
 
-        public Builder setSubject(Subject subject) {
+        public Builder setSubject(String subject) {
             this.subject = subject;
             return this;
         }
@@ -69,12 +69,12 @@ public class Group {
         return name;
     }
 
-    public Lecture getLecture() {
+    public String getLecture() {
 
         return lecture;
     }
 
-    public Subject getSubject() {
+    public String getSubject() {
 
         return subject;
     }
