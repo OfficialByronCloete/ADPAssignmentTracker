@@ -10,15 +10,16 @@ import org.junit.runners.MethodSorters;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 import static org.junit.Assert.*;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class ChoiceRepositoryTest {
 
-    private static ChoiceRepository repository = new ChoiceRepository();
-    List<Vote> voteList = new ArrayList<>();
-    private Choice choice = ChoiceFactory.createChoice("APD3", voteList);
+    private static ChoiceRepository repository = ChoiceRepository.getRepository();
+    static List<Vote> voteList = new ArrayList<>();
+    private static Choice choice = ChoiceFactory.createChoice("APD3", voteList);
 
     @Test
     public void a_create() {
@@ -30,6 +31,7 @@ public class ChoiceRepositoryTest {
     @Test
     public void b_read() {
         Choice read = repository.read(choice.getId());
+        assertEquals(choice.getId(), read.getId());
         System.out.println("Read:" + read);
     }
 
@@ -39,16 +41,19 @@ public class ChoiceRepositoryTest {
                 .setVotes(voteList)
                 .build();
         updated = repository.update(updated);
+        assertNotEquals(choice.getName(), updated.getName());
         System.out.println("Update:" + updated);
     }
 
     @Test
-    public void delete() {
+    public void e_delete() {
         repository.delete(choice.getId());
     }
 
     @Test
-    public void e_getAll() {
-        repository.getAll();
+    public void d_getAll() {
+        Set<Choice> repo = repository.getAll();
+        assertEquals(1,repo.size());
+        System.out.println("Get all: " + repo.toString());
     }
 }
