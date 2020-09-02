@@ -15,7 +15,6 @@ import java.util.Date;
 public class UserRepositoryTest {
 
     private static UserRepository repo = UserRepository.getRepo();
-    Date date = new Date();
     private static User user = UserFactory.createUser("Byron", "Cloete", "wordpass", "byroncloete7@gmail.com");
 
     @Test
