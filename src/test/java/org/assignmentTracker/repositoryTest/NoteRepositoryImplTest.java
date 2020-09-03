@@ -28,14 +28,14 @@ public class NoteRepositoryImplTest {
     public void a_create() {
         Note created = repository.create(note);
         Assert.assertEquals(created.getId(), note.getId());
-        System.out.println(created + ": created");
+        System.out.println(created + ": created \n");
     }
 
     @Test
     public void b_read() {
 
         Note read = repository.read(note.getId());
-        System.out.println(read + " : Read");
+        System.out.println(read + " : Read  \n");
     }
 
     @Test
@@ -43,12 +43,12 @@ public class NoteRepositoryImplTest {
 
         Note updated = new Note.Builder().copy(note).setDescription("Chapter 9").build();
         updated = repository.update(updated);
-        System.out.println(updated + " : updated");
+        System.out.println(updated + " : updated \n");
     }
 
     @Test
     public void d_getAll() {
-        System.out.println(repository.getAll() + ": Is everything");
+        System.out.println(repository.getAll() + ": Is everything \n");
     }
 
     @Test
