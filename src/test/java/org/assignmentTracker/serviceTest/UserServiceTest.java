@@ -34,7 +34,7 @@ public class UserServiceTest {
         Assert.assertEquals(user.getID(), created.getID());
         Assert.assertEquals(user2.getID(), created2.getID());
         Assert.assertEquals(user3.getID(), created3.getID());
-        System.out.println(("Created: " + created + "\n" + created2 + "\n" + created2));
+        System.out.println(("Created: " + created + "\n" + created2 + "\n" + created3));
     }
 
     @Test
