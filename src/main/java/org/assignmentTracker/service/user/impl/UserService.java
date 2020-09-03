@@ -39,9 +39,7 @@ public class UserService implements IUserService {
     }
 
     @Override
-    public User create(User user) {
-        return this.repo.create(user);
-    }
+    public User create(User user) { return this.repo.create(user); }
 
     @Override
     public User read(Integer integer) {
