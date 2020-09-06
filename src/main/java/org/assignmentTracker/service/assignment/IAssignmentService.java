@@ -1,11 +1,10 @@
-package org.assignmentTracker.service.user;
+package org.assignmentTracker.service.assignment;
 
 import org.assignmentTracker.entity.Assignment;
 import org.assignmentTracker.service.IService;
 
 import java.util.Set;
 
-public interface IAssignmentService extends IService<Assigment, Integer> {
+public interface IAssignmentService extends IService<Assignment, Integer> {
     Set<Assignment> getAll();
-    Set<User> getAllSurnamesThatStartWithC();
 }
