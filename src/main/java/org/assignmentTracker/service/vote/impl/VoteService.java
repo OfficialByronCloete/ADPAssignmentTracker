@@ -6,6 +6,14 @@ import org.assignmentTracker.service.vote.IVoteService;
 
 import java.util.Set;
 
+
+/**
+ * VoteService.java
+ * Vote service implementation
+ * Date: 06 August 2020
+ * @author Claude Christ De-Tchambila
+ * student number: 217035027
+ */
 public class VoteService implements IVoteService {
 
     private static VoteService service = null;

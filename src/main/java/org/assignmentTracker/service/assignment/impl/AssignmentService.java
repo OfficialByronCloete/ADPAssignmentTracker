@@ -4,9 +4,15 @@ import org.assignmentTracker.entity.Assignment;
 import org.assignmentTracker.repository.assignment.impl.AssignmentRepository;
 import org.assignmentTracker.service.assignment.IAssignmentService;
 
-import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * AssignmentService.java
+ * Assignment service implementation
+ * Date: 06 August 2020
+ * @author Claude Christ De-Tchambila
+ * student number: 217035027
+ */
 public class AssignmentService implements IAssignmentService {
 
     private static AssignmentService service = null;
