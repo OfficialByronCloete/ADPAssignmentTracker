@@ -27,7 +27,7 @@ public class UserServiceTest {
 
 
     @Test
-    public void A_create() {
+    public void a_create() {
         User created = service.create(user);
         User created2 = service.create(user2);
         User created3 = service.create(user3);
