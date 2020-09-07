@@ -4,7 +4,7 @@ package org.assignmentTracker.service.subject.impl;
  * @author : Lyse-Celeste Irakoze
  * Student Number : 217132057
  * Date : 03 September 2020
- * SubjectServiceImpl
+ * SubjectServiceImpl.
  */
 
 import org.assignmentTracker.entity.Subject;
