@@ -6,7 +6,6 @@ import org.assignmentTracker.service.IService;
 import java.util.Set;
 
 public interface IUserService extends IService<User, Integer> {
-
     Set<User> getAll();
     Set<User> getAllSurnamesThatStartWithC();
 }
