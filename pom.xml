@@ -4,9 +4,15 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.example</groupId>
-  <artifactId>Practical1</artifactId>
+  <groupId>org.assignmentTracker</groupId>
+  <artifactId>ADPAssignmentTracker</artifactId>
   <version>1.0-SNAPSHOT</version>
+
+  <parent>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <groupId>org.springframework.boot</groupId>
+    <version>2.3.4.RELEASE</version>
+  </parent>
 
   <name>ADPAssignmentTracker</name>
   <!-- FIXME change it to the project's website -->
@@ -24,6 +30,11 @@
       <artifactId>junit</artifactId>
       <version>4.11</version>
       <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
   </dependencies>
 
