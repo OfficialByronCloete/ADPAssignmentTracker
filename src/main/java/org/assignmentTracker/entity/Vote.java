@@ -23,6 +23,14 @@ public class Vote {
         this.voter = builder.voter;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setVoter(User voter) {
+        this.voter = voter;
+    }
+
     public int getId() {
         return id;
     }
