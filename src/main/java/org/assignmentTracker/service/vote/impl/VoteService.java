@@ -3,6 +3,7 @@ package org.assignmentTracker.service.vote.impl;
 import org.assignmentTracker.entity.Vote;
 import org.assignmentTracker.repository.vote.impl.VoteRepository;
 import org.assignmentTracker.service.vote.IVoteService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
@@ -14,6 +15,7 @@ import java.util.Set;
  * @author Claude Christ De-Tchambila
  * student number: 217035027
  */
+@Service
 public class VoteService implements IVoteService {
 
     private static VoteService service = null;
