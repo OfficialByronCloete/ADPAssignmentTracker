@@ -17,6 +17,8 @@ public class User {
     private String email;
     private Date joinDate;
 
+    private User() {}
+
     public User(Builder builder){
         this.id = builder.id;
         this.name = builder.name;
