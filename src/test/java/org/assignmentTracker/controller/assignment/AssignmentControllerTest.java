@@ -1,9 +1,9 @@
-package org.assignmentTracker.controller.vote;
+package org.assignmentTracker.controller.assignment;
 
-import org.assignmentTracker.entity.User;
-import org.assignmentTracker.entity.Vote;
+import org.assignmentTracker.entity.Assignment;
+import org.assignmentTracker.factory.AssignmentFactory;
+import org.assignmentTracker.factory.SubjectFactory;
 import org.assignmentTracker.factory.UserFactory;
-import org.assignmentTracker.factory.VoteFactory;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,31 +17,36 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
-import java.util.Objects;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertNotNull;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @RunWith(SpringRunner.class)
-public class VoteControllerTest {
+public class AssignmentControllerTest {
 
     @Autowired
     private TestRestTemplate restTemplate;
-    private final String baseUrl = "http://localhost:8080/vote";
-    private static Vote vote;
+    private static Assignment assignment;
+    private final String baseUrl = "http://localhost:8080/assignment";
 
     @Test
     public void a_create() {
-        Vote newVote = VoteFactory.createVote(UserFactory.createUser("Claude", "De-Tchambila",
-                "12312", "christ.tchambila@email.com"));
+        Assignment newAssignment = AssignmentFactory.createAssignment("Project Deliverable 3",
+                SubjectFactory.createSubject("Project 3", "PRT362S", "Rothman", new Date()),
+                new Date(),
+                null,
+                null,
+                UserFactory.createUser("Martin", "Fowler", "123123", "martin@email.com")
+        );
         String url = baseUrl + "/create";
-        ResponseEntity<Vote> postResponse = restTemplate.postForEntity(url, newVote, Vote.class);
+        ResponseEntity<Assignment> postResponse = restTemplate.postForEntity(url, newAssignment, Assignment.class);
 
         assertNotNull(postResponse.getBody());
-        vote = postResponse.getBody();
+        assignment = postResponse.getBody();
 
         System.out.println("Create vote");
 
@@ -53,14 +58,14 @@ public class VoteControllerTest {
 
     @Test
     public void b_read() {
-        int id = vote.getId();
+        int id = assignment.getId();
         String url = baseUrl + "/read/" + id;
 
-        ResponseEntity<Vote> getResponse = restTemplate.getForEntity(url, Vote.class);
+        ResponseEntity<Assignment> getResponse = restTemplate.getForEntity(url, Assignment.class);
 
         assertNotNull(getResponse.getBody());
 
-        System.out.println("Read vote");
+        System.out.println("Read assignment");
         System.out.println(getResponse.getBody());
         System.out.println(getResponse.getStatusCodeValue());
     }
@@ -68,16 +73,15 @@ public class VoteControllerTest {
     @Test
     public void c_update() {
         String url = baseUrl + "/update";
-        User user = vote.getVoter();
-        vote.setVoter(UserFactory.createUser("Melody", "Bell", "123123", "bell@email.com"));
-        restTemplate.put(url, vote);
+        String oldName = assignment.getName();
+        assignment.setName("Deliverable 3");
 
-        assertNotSame(user, vote.getVoter());
+        assertNotEquals(assignment.getName(), oldName);
     }
 
     @Test
     public void e_delete() {
-        String url = baseUrl + "/delete/" + vote.getId();
+        String url = baseUrl + "/delete/" + assignment.getId();
         restTemplate.delete(url);
 
         ResponseEntity<List> response = restTemplate.getForEntity(baseUrl + "/all", List.class);
@@ -93,7 +97,7 @@ public class VoteControllerTest {
         HttpEntity<String> entity = new HttpEntity<>(null, headers);
         ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.GET, entity, String.class);
 
-        System.out.println("Get all votes");
+        System.out.println("Get all assignments");
         System.out.println(response.getBody());
     }
 }

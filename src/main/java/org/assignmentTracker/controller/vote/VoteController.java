@@ -22,6 +22,21 @@ public class VoteController {
         return voteService.create(newVote);
     }
 
+    @GetMapping("/read/{id}")
+    public Vote read(@PathVariable int id) {
+        return voteService.read(id);
+    }
+
+    @PutMapping("/update")
+    public Vote update(@RequestBody Vote vote) {
+        return voteService.update(vote);
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public void delete(@PathVariable int id) {
+        voteService.delete(id);
+    }
+
     @GetMapping("/all")
     public Set<Vote> getAll() {
         return voteService.getAll();
