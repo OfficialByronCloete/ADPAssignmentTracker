@@ -27,9 +27,4 @@ public class VoteController {
         return voteService.getAll();
     }
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String index() {
-        return "vote index";
-    }
-
 }

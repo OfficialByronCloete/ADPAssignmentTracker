@@ -32,8 +32,10 @@ public class VoteControllerTest {
         ResponseEntity<Vote> postResponse = restTemplate.postForEntity(url, vote, Vote.class);
         assertNotNull(postResponse.getBody());
 
-        System.out.println(postResponse);
+        System.out.println("Response body");
         System.out.println(postResponse.getBody());
+        System.out.println("Response status code");
+        System.out.println(postResponse.getStatusCodeValue());
     }
 
     @Test
