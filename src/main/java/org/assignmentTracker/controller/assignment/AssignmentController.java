@@ -2,13 +2,10 @@ package org.assignmentTracker.controller.assignment;
 
 import org.assignmentTracker.entity.Assignment;
 import org.assignmentTracker.factory.AssignmentFactory;
-import org.assignmentTracker.factory.SubjectFactory;
-import org.assignmentTracker.service.assignment.impl.AssignmentService;
 import org.assignmentTracker.service.assignment.impl.AssignmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Date;
 import java.util.Set;
 
 @RestController
