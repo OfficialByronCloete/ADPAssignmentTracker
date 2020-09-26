@@ -10,9 +10,12 @@ package org.assignmentTracker.service.subject.impl;
 import org.assignmentTracker.entity.Subject;
 import org.assignmentTracker.repository.subject.impl.SubjectRepositoryImpl;
 import org.assignmentTracker.service.subject.ISubjectService;
+import org.springframework.stereotype.Service;
+
 import java.util.HashSet;
 import java.util.Set;
 
+@Service
 public class SubjectServiceImpl implements ISubjectService {
 
     private static ISubjectService service = null;
