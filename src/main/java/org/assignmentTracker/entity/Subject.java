@@ -1,15 +1,14 @@
 package org.assignmentTracker.entity;
 
-import java.io.Serializable;
 import java.util.Date;
 
-public class Subject implements Serializable {
+public class Subject {
 
     private int id;
     private String name,code,lecture;
     private Date dates;
 
-    private Subject(){}
+    private Subject() {}
 
     private Subject(Builder builder){
         this.id = builder.id;
