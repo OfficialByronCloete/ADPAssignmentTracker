@@ -4,10 +4,11 @@ import org.assignmentTracker.entity.Admin;
 import org.assignmentTracker.entity.User;
 import org.assignmentTracker.repository.admin.impl.AdminRepositoryImpl;
 import org.assignmentTracker.service.admin.IAdminService;
+import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
-
+@Service
 public class AdminService implements IAdminService{
     private static IAdminService service = null;
     private AdminRepositoryImpl repository;
