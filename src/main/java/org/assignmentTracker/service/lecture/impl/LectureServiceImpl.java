@@ -4,6 +4,8 @@ import org.assignmentTracker.entity.Lecture;
 import org.assignmentTracker.repository.lecture.LectureRepository;
 import org.assignmentTracker.repository.lecture.impl.LectureRepositoryImpl;
 import org.assignmentTracker.service.lecture.ILectureService;
+import org.springframework.stereotype.Service;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -15,7 +17,7 @@ import java.util.Set;
  * Date: 04 September 2020
  */
 
-
+@Service
 public class LectureServiceImpl implements ILectureService {
 
 
