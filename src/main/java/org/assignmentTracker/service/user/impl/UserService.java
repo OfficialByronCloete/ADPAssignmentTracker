@@ -7,6 +7,7 @@ import org.assignmentTracker.service.user.IUserService;
 import java.util.HashSet;
 import java.util.Set;
 
+@Service
 public class UserService implements IUserService {
 
     private static IUserService service = null;
