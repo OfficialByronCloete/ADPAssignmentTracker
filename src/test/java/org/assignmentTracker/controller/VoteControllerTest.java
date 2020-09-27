@@ -1,4 +1,4 @@
-package org.assignmentTracker.controllerTest;
+package org.assignmentTracker.controller;
 
 import org.assignmentTracker.entity.User;
 import org.assignmentTracker.entity.Vote;

@@ -53,13 +53,14 @@ public class ChoiceControllerTest {
         ResponseEntity<Choice> responseEntity = restTemplate.postForEntity(url, choice, Choice.class);
         assertEquals(200, responseEntity.getStatusCodeValue());
         System.out.println("Post: "+ responseEntity.getBody().getId());
+        System.out.println(responseEntity.toString());
     }
 
     @Test
     public void c_read() {
-        String url = baseUrl + "/read/" + 427060491; //copy id from the console output of c_getAll and paste here to test
+        String url = baseUrl + "/read/" + 218556910; //copy id from the console output of c_getAll and paste here to test
         ResponseEntity<Choice> responseEntity = restTemplate.getForEntity(url, Choice.class);
-        assertEquals(427060491, responseEntity.getBody().getId());
+        assertEquals(218556910, responseEntity.getBody().getId());
         assertEquals(200, responseEntity.getStatusCodeValue());
         System.out.println(url.toString());
     }
@@ -77,7 +78,7 @@ public class ChoiceControllerTest {
 
     @Test
     public void delete() {
-        String url = baseUrl + "/delete/"  + 427060491; //copy the id from getAll and paste here to test
+        String url = baseUrl + "/delete/"  + 218556910; //copy the id from getAll and paste here to test
         restTemplate.delete(url);
         System.out.println(url.toString());
     }

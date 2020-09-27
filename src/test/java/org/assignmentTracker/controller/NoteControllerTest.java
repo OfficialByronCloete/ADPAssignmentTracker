@@ -1,11 +1,8 @@
 package org.assignmentTracker.controller;
 
-import org.assignmentTracker.entity.Assignment;
 import org.assignmentTracker.entity.Note;
 import org.assignmentTracker.entity.Subject;
-import org.assignmentTracker.factory.AssignmentFactory;
 import org.assignmentTracker.factory.NoteFactory;
-import org.assignmentTracker.factory.SubjectFactory;
 import org.assignmentTracker.factory.UserFactory;
 import org.junit.Assert;
 import org.junit.FixMethodOrder;
