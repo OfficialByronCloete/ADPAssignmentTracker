@@ -10,9 +10,11 @@ package org.assignmentTracker.service.note.impl;
 import org.assignmentTracker.entity.Note;
 import org.assignmentTracker.repository.note.impl.NoteRepositoryImpl;
 import org.assignmentTracker.service.note.INoteService;
+import org.springframework.stereotype.Service;
+
 import java.util.HashSet;
 import java.util.Set;
-
+@Service
 public class NoteServiceImpl implements INoteService {
 
     private static INoteService service = null;

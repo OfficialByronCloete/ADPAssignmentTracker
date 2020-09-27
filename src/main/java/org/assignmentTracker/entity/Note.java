@@ -9,6 +9,7 @@ public class Note {
     private  Date dateCreated;
     private User creator;
 
+    private Note() {}
 
     private Note(Builder builder){
         this.id = builder.id;
