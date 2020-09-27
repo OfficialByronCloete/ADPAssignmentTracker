@@ -10,7 +10,7 @@ import java.util.Set;
 @Service
 public class ChoiceServiceImpl implements IChoiceService {
 
-    private static ChoiceServiceImpl choiceService = null;
+    private static ChoiceServiceImpl choiceService;
     private ChoiceRepository choiceRepository;
 
     private ChoiceServiceImpl(){

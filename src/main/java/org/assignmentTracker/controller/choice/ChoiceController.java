@@ -24,10 +24,10 @@ public class ChoiceController {
 
     @Autowired
     private ChoiceServiceImpl choiceService;
-
     public ChoiceController(ChoiceServiceImpl choiceService) {
         this.choiceService = choiceService;
     }
+
 
     @PostMapping("/create")
     public Choice create(@RequestBody Choice choice){

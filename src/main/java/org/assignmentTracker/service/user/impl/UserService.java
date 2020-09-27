@@ -3,6 +3,7 @@ package org.assignmentTracker.service.user.impl;
 import org.assignmentTracker.entity.User;
 import org.assignmentTracker.repository.user.impl.UserRepository;
 import org.assignmentTracker.service.user.IUserService;
+import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
