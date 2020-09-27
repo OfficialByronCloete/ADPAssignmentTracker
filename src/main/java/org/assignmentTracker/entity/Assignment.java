@@ -50,6 +50,30 @@ public class Assignment {
         return creator;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSubject(Subject subject) {
+        this.subject = subject;
+    }
+
+    public void setDateAssigned(Date dateAssigned) {
+        this.dateAssigned = dateAssigned;
+    }
+
+    public void setAdmins(List<Admin> admins) {
+        this.admins = admins;
+    }
+
+    public void setMembers(List<Member> members) {
+        this.members = members;
+    }
+
+    public void setCreator(User creator) {
+        this.creator = creator;
+    }
+
     public static class Builder {
         private int id;
         private String name;

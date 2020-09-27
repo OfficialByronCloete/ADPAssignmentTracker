@@ -3,6 +3,8 @@ package org.assignmentTracker.repositoryTest;
 import org.assignmentTracker.entity.Choice;
 import org.assignmentTracker.entity.Vote;
 import org.assignmentTracker.factory.ChoiceFactory;
+import org.assignmentTracker.factory.UserFactory;
+import org.assignmentTracker.factory.VoteFactory;
 import org.assignmentTracker.repository.choice.impl.ChoiceRepository;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
@@ -18,11 +20,13 @@ import static org.junit.Assert.*;
 public class ChoiceRepositoryTest {
 
     private static ChoiceRepository repository = ChoiceRepository.getRepository();
+    Vote vote = VoteFactory.createVote(UserFactory.createUser("Sino", "Foji", "pass@123", "sino.foji@protonmail.com"));
     static List<Vote> voteList = new ArrayList<>();
     private static Choice choice = ChoiceFactory.createChoice("APD3", voteList);
 
     @Test
     public void a_create() {
+        voteList.add(vote);
         Choice choice1 = repository.create(choice);
         assertEquals(choice.getId(), choice1.getId());
         System.out.println("Create: " +  choice1);
