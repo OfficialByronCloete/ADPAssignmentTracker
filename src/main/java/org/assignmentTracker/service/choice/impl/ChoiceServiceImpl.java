@@ -3,12 +3,14 @@ package org.assignmentTracker.service.choice.impl;
 import org.assignmentTracker.entity.Choice;
 import org.assignmentTracker.repository.choice.impl.ChoiceRepository;
 import org.assignmentTracker.service.choice.IChoiceService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class ChoiceServiceImpl implements IChoiceService {
 
-    private static ChoiceServiceImpl choiceService = null;
+    private static ChoiceServiceImpl choiceService;
     private ChoiceRepository choiceRepository;
 
     private ChoiceServiceImpl(){

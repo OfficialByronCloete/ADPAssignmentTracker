@@ -12,6 +12,10 @@ public class Choice {
         this.votes = builder.votes;
     }
 
+    public Choice() {
+
+    }
+
     public int getId() {
         return id;
     }
