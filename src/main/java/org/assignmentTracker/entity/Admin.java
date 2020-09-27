@@ -6,10 +6,11 @@ Date: 29 June 2020
 Desc: Admin class
  */
 public class Admin {
+    private Admin(){}
 
-    private final int id;
-    private final Assignment assignment;
-    private final User user;
+    private  int id;
+    private  Assignment assignment;
+    private  User user;
 
 
     public Admin(Builder builder) {
