@@ -91,7 +91,8 @@ public class PollControllerTest {
 
     @Test
     public void e_delete(){
-
+        
+        Poll poll = new Poll();
         String url = baseURL + "delete"+ poll.getId();
         System.out.println("URL:"+ url);
         restTemplate.delete(url);
