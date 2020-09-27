@@ -9,7 +9,6 @@ package org.assignmentTracker.service.member.imp;
 
 
 import org.assignmentTracker.entity.Member;
-import org.assignmentTracker.entity.Subject;
 import org.assignmentTracker.repository.member.MemberRepository;
 import org.assignmentTracker.repository.member.impl.MemberRepositoryImpl;
 import org.assignmentTracker.service.member.IMemberService;
@@ -17,6 +16,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
+
 @Service
 public class MemberServiceImpl implements IMemberService {
 
