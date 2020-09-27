@@ -3,6 +3,7 @@ package org.assignmentTracker.service.assignment.impl;
 import org.assignmentTracker.entity.Assignment;
 import org.assignmentTracker.repository.assignment.impl.AssignmentRepository;
 import org.assignmentTracker.service.assignment.IAssignmentService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
@@ -13,6 +14,7 @@ import java.util.Set;
  * @author Claude Christ De-Tchambila
  * student number: 217035027
  */
+@Service
 public class AssignmentService implements IAssignmentService {
 
     private static AssignmentService service = null;

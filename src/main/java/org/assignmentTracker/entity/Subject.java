@@ -8,6 +8,7 @@ public class Subject {
     private String name,code,lecture;
     private Date dates;
 
+    private Subject() {}
 
     private Subject(Builder builder){
         this.id = builder.id;
