@@ -7,9 +7,14 @@ Desc: Admin class
  */
 public class Admin {
 
-    private final int id;
-    private final Assignment assignment;
-    private final User user;
+    private Admin()
+    {}
+
+    private  int id;
+    private  Assignment assignment;
+    private  User user;
+
+
 
 
     public Admin(Builder builder) {
