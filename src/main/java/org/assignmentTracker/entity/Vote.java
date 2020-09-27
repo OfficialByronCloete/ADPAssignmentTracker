@@ -1,6 +1,8 @@
 package org.assignmentTracker.entity;
 
 
+import java.io.Serializable;
+
 /**
  * @author Claude De-Tchambila
  * student number: 217035027
@@ -15,6 +17,19 @@ public class Vote {
 
     //constructor
     private Vote() {}
+
+    private Vote(Builder builder) {
+        this.id = builder.id;
+        this.voter = builder.voter;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setVoter(User voter) {
+        this.voter = voter;
+    }
 
     public int getId() {
         return id;

@@ -10,6 +10,8 @@ public class Poll {
     private Member voters;
     private String votes;
 
+    public Poll(){}
+
 
     public Poll  (Builder builder){
         this.id = builder.id;

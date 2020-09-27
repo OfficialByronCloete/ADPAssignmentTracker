@@ -16,6 +16,9 @@ public class Group {
         this.subject = builder.subject;
 
     }
+
+    public Group() {}
+
     public static class Builder{
 
         private int id;
