@@ -4,6 +4,7 @@ import org.assignmentTracker.entity.Poll;
 import org.assignmentTracker.repository.poll.PollRepository;
 import org.assignmentTracker.repository.poll.impl.PollRepositoryImpl;
 import org.assignmentTracker.service.poll.PollService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 /**
@@ -12,6 +13,7 @@ import java.util.Set;
  * Desc: Implementation class of PollSercvice
  * Date: 06 September 2020
  */
+@Service
 public class PollServiceImpl implements PollService {
 
 

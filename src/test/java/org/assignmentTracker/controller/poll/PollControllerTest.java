@@ -37,6 +37,7 @@ public class PollControllerTest {
 
     @Autowired
     private TestRestTemplate restTemplate;
+    private Poll poll;
     private String baseURL = "http://localhost:8080/poll";
     User user1 = UserFactory.createUser("Steve","Biko","blackconsciousness","BantuBiko@gmail.com");
 
@@ -92,7 +93,7 @@ public class PollControllerTest {
     @Test
     public void e_delete(){
         
-        Poll poll = new Poll();
+        //Poll poll = new Poll();
         String url = baseURL + "delete"+ poll.getId();
         System.out.println("URL:"+ url);
         restTemplate.delete(url);

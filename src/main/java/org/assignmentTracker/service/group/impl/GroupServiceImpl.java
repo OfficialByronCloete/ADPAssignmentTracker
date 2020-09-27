@@ -4,6 +4,7 @@ import org.assignmentTracker.entity.Group;
 import org.assignmentTracker.repository.group.GroupRepository;
 import org.assignmentTracker.repository.group.impl.GroupRepositoryImpl;
 import org.assignmentTracker.service.group.GroupService;
+import org.springframework.stereotype.Service;
 
 
 import java.util.Set;
@@ -15,6 +16,7 @@ import java.util.Set;
  * Date: 06 September 2020
  */
 
+@Service
 public class GroupServiceImpl implements GroupService  {
 
     private static GroupService service = null;

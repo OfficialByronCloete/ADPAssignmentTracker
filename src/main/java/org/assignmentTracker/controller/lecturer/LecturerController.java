@@ -10,6 +10,7 @@ package org.assignmentTracker.controller.lecturer;
 import org.assignmentTracker.entity.Lecture;
 import org.assignmentTracker.factory.LectureFactory;
 import org.assignmentTracker.repository.lecture.impl.LectureRepositoryImpl;
+import org.assignmentTracker.service.lecture.impl.LectureServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,7 +21,7 @@ import java.util.Set;
 public class LecturerController {
 
     @Autowired
-    private LectureRepositoryImpl lectureService;
+    private LectureServiceImpl lectureService;
 
     @PostMapping("/create")
     public Lecture create (@RequestBody Lecture lecture){
