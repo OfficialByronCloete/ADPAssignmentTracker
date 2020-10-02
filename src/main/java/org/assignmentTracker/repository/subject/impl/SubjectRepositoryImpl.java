@@ -27,6 +27,7 @@ public class SubjectRepositoryImpl implements ISubjectRepository {
         return repository;
     }
 
+
     @Override
     public Set<Subject> getAll() {
         return subjectDB;
