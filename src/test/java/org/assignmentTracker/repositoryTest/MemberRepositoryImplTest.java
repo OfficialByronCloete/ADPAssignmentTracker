@@ -3,7 +3,7 @@ package org.assignmentTracker.repositoryTest;
 import org.assignmentTracker.entity.Member;
 import org.assignmentTracker.factory.MemberFactory;
 import org.assignmentTracker.repository.member.MemberRepository;
-import org.assignmentTracker.repository.member.impl.MemberRepositoryImpl;
+//import org.assignmentTracker.repository.member.impl.MemberRepositoryImpl;
 import org.junit.Assert;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
@@ -18,7 +18,7 @@ import static org.junit.Assert.*;
  * Date: 28 August 2020
  */
 
-@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+/*@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 
 public class MemberRepositoryImplTest {
 
@@ -63,4 +63,4 @@ public class MemberRepositoryImplTest {
     public void e_getAll() {
         System.out.println("Get all: " + repository.getAll());
     }
-}
+}*/

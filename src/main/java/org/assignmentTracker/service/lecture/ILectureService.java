@@ -9,9 +9,11 @@ package org.assignmentTracker.service.lecture;
 
 import org.assignmentTracker.entity.Lecture;
 import org.assignmentTracker.service.IService;
+import org.springframework.stereotype.Repository;
+
 import java.util.Set;
 
-
+@Repository
 
 public interface ILectureService extends IService <Lecture,Integer> {
 

@@ -4,11 +4,11 @@ package org.assignmentTracker.serviceTest;
 import org.assignmentTracker.entity.Member;
 import org.assignmentTracker.factory.MemberFactory;
 import org.assignmentTracker.service.member.IMemberService;
-import org.assignmentTracker.service.member.imp.MemberServiceImpl;
 import org.junit.Assert;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * @author Justin Kokolo
@@ -19,7 +19,8 @@ import org.junit.runners.MethodSorters;
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class MemberServiceImplTest {
 
-    private static IMemberService service = MemberServiceImpl.getService();
+    @Autowired
+    private static IMemberService service ;
     private static Member member_1 = MemberFactory.createMember(2);
     private static Member member_2 = MemberFactory.createMember(5);
     private static Member member_3 = MemberFactory.createMember(6);
