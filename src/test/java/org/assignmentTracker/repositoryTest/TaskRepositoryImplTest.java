@@ -9,7 +9,6 @@ import org.junit.Test;
 import org.junit.runners.MethodSorters;
 
 /**
- *
  * @author Caleb Ruiters
  * student number: 215169751
  * Desc: Test case for Repository/Data Access Layer of the Task entity
