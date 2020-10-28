@@ -67,7 +67,7 @@ public class PollControllerTest {
 
     @Test
     public void b_read(){
-        Poll poll = new Poll();
+        //Poll poll = new Poll();
         String url = baseURL + "read"+ poll.getId();
         System.out.println("URL"+url);
         ResponseEntity <Poll> responseEntity = restTemplate.getForEntity(url,Poll.class);
@@ -78,7 +78,7 @@ public class PollControllerTest {
 
     @Test
     public void c_update(){
-        Poll poll = new Poll();
+      //  Poll poll = new Poll();
         Poll update = new Poll.Builder().copy(poll).setVotes("Yes").build();
         String url = baseURL + "update";
         System.out.println("URL:"+ url);

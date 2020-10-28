@@ -8,6 +8,7 @@ import org.junit.Assert;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Set;
 
@@ -23,7 +24,8 @@ import static org.junit.Assert.*;
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class GroupServiceImplTest {
 
-    private static GroupService service = GroupServiceImpl.getService();
+    @Autowired
+    private static GroupService service ;
     private static Group group = GroupFactory.createGroup("Group 13",
             "Arinze Anikwue","Application Development Practice");
 
