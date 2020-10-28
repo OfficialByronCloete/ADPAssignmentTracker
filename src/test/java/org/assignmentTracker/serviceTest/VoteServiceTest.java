@@ -9,13 +9,16 @@ import org.assignmentTracker.service.vote.impl.VoteService;
 import org.junit.Assert;
 import org.junit.FixMethodOrder;
 import org.junit.runners.MethodSorters;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Set;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class VoteServiceTest extends TestCase {
 
-    private static VoteService service = VoteService.getService();
+    @Autowired
+    private VoteService service;
+
     private static Vote vote = VoteFactory.createVote(
             UserFactory.createUser("John", "Doe", "joh#pass1", "john@email.com")
     );

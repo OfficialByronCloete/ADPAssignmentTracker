@@ -20,8 +20,6 @@ import java.util.stream.Collectors;
 @Service
 public class VoteService implements IVoteService {
 
-    private static VoteService service = null;
-
     @Autowired
     private IVoteRepository repository;
 

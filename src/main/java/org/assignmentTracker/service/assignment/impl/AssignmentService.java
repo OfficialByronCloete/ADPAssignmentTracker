@@ -19,8 +19,6 @@ import java.util.stream.Collectors;
 @Service
 public class AssignmentService implements IAssignmentService {
 
-    private static AssignmentService service = null;
-
     @Autowired
     private IAssignmentRepository repository;
 
