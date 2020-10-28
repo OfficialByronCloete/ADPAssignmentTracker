@@ -41,7 +41,7 @@ public class AssignmentService implements IAssignmentService {
 
     @Override
     public Assignment update(Assignment assignment) {
-        if (repository.existsById(assignment.getId())) repository.save(assignment);
+        if (repository.existsById(assignment.getId())) return repository.save(assignment);
         return null;
     }
 
