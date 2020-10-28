@@ -1,11 +1,7 @@
 package org.assignmentTracker.entity;
 
 
-import javax.persistence.ElementCollection;
-import javax.persistence.Embeddable;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import java.io.Serializable;
+import javax.persistence.*;
 
 /**
  * @author Claude De-Tchambila
@@ -17,12 +13,12 @@ import java.io.Serializable;
 @Embeddable
 public class Vote {
 
-    //Variables
     @Id
     private int id;
-    protected User voter;
 
-    //constructor
+    @OneToOne
+    private User voter;
+
     protected Vote() {}
 
     private Vote(Builder builder) {
@@ -52,7 +48,6 @@ public class Vote {
         private User voter;
 
         public Builder() {
-
         }
 
         public Builder setId(int id) {
@@ -66,11 +61,7 @@ public class Vote {
         }
 
         public Vote build() {
-            Vote vote = new Vote();
-            vote.id = this.id;
-            vote.voter = this.voter;
-
-            return vote;
+            return new Vote(this);
         }
 
         public Builder copy(Vote vote) {
