@@ -1,5 +1,7 @@
 package org.assignmentTracker.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Date;
 /*
 @author Byron Cloete
@@ -7,8 +9,11 @@ StudNo: 214189872
 Date: 29 June 2020
 Desc: Base User class using builder
  */
+
+@Entity
 public class User {
 
+    @Id
     private int id;
     private String name;
     private String surname;
@@ -17,7 +22,7 @@ public class User {
     private String email;
     private Date joinDate;
 
-    private User() {}
+    protected User() {}
 
     public User(Builder builder){
         this.id = builder.id;
