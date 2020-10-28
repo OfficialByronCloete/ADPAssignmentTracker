@@ -6,6 +6,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import java.util.Date;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * @author Claude De-Tchambila
@@ -164,6 +165,25 @@ public class Assignment {
             return this;
         }
 
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Assignment that = (Assignment) o;
+        return id == that.id &&
+                name.equals(that.name) &&
+                subject.equals(that.subject) &&
+                dateAssigned.equals(that.dateAssigned) &&
+                Objects.equals(admins, that.admins) &&
+                Objects.equals(members, that.members) &&
+                creator.equals(that.creator);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, subject, dateAssigned, admins, members, creator);
     }
 
     @Override

@@ -10,6 +10,7 @@ import org.assignmentTracker.service.assignment.impl.AssignmentService;
 import org.junit.Assert;
 import org.junit.FixMethodOrder;
 import org.junit.runners.MethodSorters;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Date;
 import java.util.Set;
@@ -17,7 +18,8 @@ import java.util.Set;
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class AssignmentServiceTest extends TestCase {
 
-    private static AssignmentService service = AssignmentService.getService();
+    @Autowired
+    private AssignmentService service;
     private static Assignment assignment = AssignmentFactory.createAssignment(
             "ADP376S Assignment 7",
             SubjectFactory.createSubject("Application Development", "ADP376S", "Arinze Anikwe", new Date(4556)),

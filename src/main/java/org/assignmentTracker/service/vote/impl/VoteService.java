@@ -1,11 +1,13 @@
 package org.assignmentTracker.service.vote.impl;
 
 import org.assignmentTracker.entity.Vote;
-import org.assignmentTracker.repository.vote.impl.VoteRepository;
+import org.assignmentTracker.repository.vote.IVoteRepository;
 import org.assignmentTracker.service.vote.IVoteService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
+import java.util.stream.Collectors;
 
 
 /**
@@ -18,41 +20,36 @@ import java.util.Set;
 @Service
 public class VoteService implements IVoteService {
 
-    private static VoteService service = null;
-    private VoteRepository repository;
-
-    public VoteService() {
-        this.repository = VoteRepository.getRepository();
-    }
-
-    public static VoteService getService() {
-        if (service == null) service = new VoteService();
-        return service;
-    }
+    @Autowired
+    private IVoteRepository repository;
 
     @Override
     public Set<Vote> getAll() {
-        return repository.getAll();
+        return repository.findAll().stream().collect(Collectors.toSet());
     }
 
     @Override
     public Vote create(Vote vote) {
-        return repository.create(vote);
+        return repository.save(vote);
     }
 
     @Override
     public Vote read(Integer integer) {
-        return repository.read(integer);
+        return repository.findById(integer).orElse(null);
     }
 
     @Override
     public Vote update(Vote vote) {
-        return repository.update(vote);
+        if (repository.existsById(vote.getId())) return repository.save(vote);
+        return null;
     }
 
     @Override
-    public boolean delete(Integer integer) {
-        return repository.delete(integer);
+    public boolean delete(Integer id) {
+        repository.deleteById(id);
+
+        if (repository.existsById(id)) return false;
+        else return false;
     }
 }
 

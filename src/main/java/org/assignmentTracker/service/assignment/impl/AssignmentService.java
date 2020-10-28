@@ -1,11 +1,13 @@
 package org.assignmentTracker.service.assignment.impl;
 
 import org.assignmentTracker.entity.Assignment;
-import org.assignmentTracker.repository.assignment.impl.AssignmentRepository;
+import org.assignmentTracker.repository.assignment.IAssignmentRepository;
 import org.assignmentTracker.service.assignment.IAssignmentService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
+import java.util.stream.Collectors;
 
 /**
  * AssignmentService.java
@@ -17,41 +19,36 @@ import java.util.Set;
 @Service
 public class AssignmentService implements IAssignmentService {
 
-    private static AssignmentService service = null;
-    private AssignmentRepository repository;
-
-    public AssignmentService() {
-        this.repository = AssignmentRepository.getRepository();
-    }
-
-    public static AssignmentService getService() {
-        if (service == null) service = new AssignmentService();
-        return service;
-    }
+    @Autowired
+    private IAssignmentRepository repository;
 
     @Override
     public Set<Assignment> getAll() {
-        return repository.getAll();
+        return repository.findAll().stream().collect(Collectors.toSet());
     }
 
     @Override
     public Assignment create(Assignment assignment) {
-        return repository.create(assignment);
+        return repository.save(assignment);
     }
 
     @Override
     public Assignment read(Integer integer) {
-        return repository.read(integer);
+        return repository.findById(integer).orElse(null);
     }
 
     @Override
     public Assignment update(Assignment assignment) {
-        return repository.update(assignment);
+        if (repository.existsById(assignment.getId())) return repository.save(assignment);
+        return null;
     }
 
     @Override
-    public boolean delete(Integer integer) {
-        return repository.delete(integer);
+    public boolean delete(Integer id) {
+        repository.deleteById(id);
+
+        if (repository.existsById(id)) return false;
+        else return false;
     }
 
 }
