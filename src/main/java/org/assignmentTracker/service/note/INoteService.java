@@ -9,8 +9,11 @@ package org.assignmentTracker.service.note;
 
 import org.assignmentTracker.entity.Note;
 import org.assignmentTracker.service.IService;
+import org.springframework.stereotype.Service;
+
 import java.util.Set;
 
+@Service
 public interface INoteService extends IService<Note, Integer> {
 
     Set<Note> getAll();
