@@ -3,14 +3,13 @@ package org.assignmentTracker.serviceTest;
 import org.assignmentTracker.entity.Choice;
 import org.assignmentTracker.entity.Vote;
 import org.assignmentTracker.factory.ChoiceFactory;
-import org.assignmentTracker.repository.choice.impl.ChoiceRepository;
 import org.assignmentTracker.service.choice.impl.ChoiceServiceImpl;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 
@@ -18,8 +17,9 @@ import static org.junit.Assert.*;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class ChoiceServiceImplTest {
+    @Autowired
+    private static ChoiceServiceImpl choiceService ;
     static List<Vote> voteList = new ArrayList<>();
-    private static ChoiceServiceImpl choiceService = ChoiceServiceImpl.getChoiceService();
     private static Choice choice = ChoiceFactory.createChoice("Java", voteList);
 
     @Test

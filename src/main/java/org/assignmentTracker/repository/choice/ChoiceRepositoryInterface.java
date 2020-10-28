@@ -1,7 +1,9 @@
 package org.assignmentTracker.repository.choice;
 
 import org.assignmentTracker.entity.Choice;
-import org.assignmentTracker.repository.IRepository;
+import org.junit.runner.RunWith;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.Set;
 
@@ -11,6 +13,6 @@ import java.util.Set;
  * date 31 August 2020 SAST
  * student number: 217078907
  */
-public interface ChoiceRepositoryInterface extends IRepository<Choice, Integer> {
-    Set<Choice> getAll();
+@Repository
+public interface ChoiceRepositoryInterface extends JpaRepository<Choice, Integer>{
 }
