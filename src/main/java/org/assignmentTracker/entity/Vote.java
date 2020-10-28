@@ -1,6 +1,10 @@
 package org.assignmentTracker.entity;
 
 
+import javax.persistence.ElementCollection;
+import javax.persistence.Embeddable;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.io.Serializable;
 
 /**
@@ -9,14 +13,17 @@ import java.io.Serializable;
  * Desc: Entity/Vote object for vote
  * Date: 5 July 2020
  */
+@Entity
+@Embeddable
 public class Vote {
 
     //Variables
+    @Id
     private int id;
-    private User voter;
+    protected User voter;
 
     //constructor
-    private Vote() {}
+    protected Vote() {}
 
     private Vote(Builder builder) {
         this.id = builder.id;
