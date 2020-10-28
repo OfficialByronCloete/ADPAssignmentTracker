@@ -1,9 +1,16 @@
 package org.assignmentTracker.entity;
+import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
-public class Choice {
+import java.util.Objects;
 
+@Entity
+public class Choice{
+
+    @Id
     private int id;
     private String name;
+    @ElementCollection
     private List <Vote> votes;
 
     public Choice(Builder builder) {
@@ -12,7 +19,7 @@ public class Choice {
         this.votes = builder.votes;
     }
 
-    public Choice() {
+    protected Choice() {
 
     }
 
@@ -62,6 +69,19 @@ public class Choice {
             this.name = choice.name;
             this.votes = choice.votes;
             return this;
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            Builder builder = (Builder) o;
+            return id == builder.id;
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(id);
         }
 
         public Choice build() {
