@@ -1,13 +1,19 @@
 package org.assignmentTracker.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 /*
 @author Brandon Villet
 StudNo: 214056791
 Date: 29 June 2020
 Desc: Admin class
  */
+@Entity
 public class Admin {
-    private Admin(){}
+    protected Admin(){}
 
+    @Id
     private  int id;
     private  Assignment assignment;
     private  User user;

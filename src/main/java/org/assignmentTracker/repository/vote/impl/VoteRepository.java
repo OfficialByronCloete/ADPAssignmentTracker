@@ -1,3 +1,4 @@
+/*
 package org.assignmentTracker.repository.vote.impl;
 
 import org.assignmentTracker.entity.Vote;
@@ -6,6 +7,7 @@ import org.assignmentTracker.repository.vote.IVoteRepository;
 import java.util.*;
 
 
+*/
 /**
  * VoteRepository.java
  *
@@ -13,7 +15,8 @@ import java.util.*;
  * student number: 217035027
  * Desc: repository/vote/impl/VoteRepository data access layer
  * Date: 25 August 2020
- */
+ *//*
+
 public class VoteRepository implements IVoteRepository {
 
     private static VoteRepository repository = null;
@@ -75,3 +78,4 @@ public class VoteRepository implements IVoteRepository {
     }
 
 }
+*/

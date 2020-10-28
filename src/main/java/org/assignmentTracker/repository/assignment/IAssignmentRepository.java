@@ -2,6 +2,7 @@ package org.assignmentTracker.repository.assignment;
 
 import org.assignmentTracker.entity.Assignment;
 import org.assignmentTracker.repository.IRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Set;
 
@@ -12,8 +13,5 @@ import java.util.Set;
  * Desc: repository/impl/VoteRepository data access layer
  * Date: 25 August 2020
  */
-public interface IAssignmentRepository extends IRepository<Assignment, Integer> {
-
-    Set<Assignment> getAll();
-
+public interface IAssignmentRepository extends JpaRepository<Assignment, Integer> {
 }
