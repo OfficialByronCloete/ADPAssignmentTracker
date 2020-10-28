@@ -5,8 +5,6 @@ import org.assignmentTracker.entity.Vote;
 import org.assignmentTracker.factory.ChoiceFactory;
 import org.assignmentTracker.factory.UserFactory;
 import org.assignmentTracker.factory.VoteFactory;
-import org.assignmentTracker.repository.choice.impl.ChoiceRepository;
-import org.assignmentTracker.service.choice.impl.ChoiceServiceImpl;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runner.RunWith;

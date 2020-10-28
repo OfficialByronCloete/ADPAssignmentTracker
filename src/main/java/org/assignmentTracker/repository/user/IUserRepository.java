@@ -1,13 +1,10 @@
 package org.assignmentTracker.repository.user;
 
 import org.assignmentTracker.entity.User;
-import org.assignmentTracker.repository.IRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.Set;
-
-public interface IUserRepository extends IRepository<User, Integer> {
-
-    Set<User> getAll();
-
+@Repository
+public interface IUserRepository extends JpaRepository<User, Integer> {
 
 }

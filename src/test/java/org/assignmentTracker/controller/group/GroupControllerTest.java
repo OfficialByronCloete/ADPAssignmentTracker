@@ -62,7 +62,7 @@ public class GroupControllerTest {
 
     @Test
     public void b_read(){
-        Group group = new Group();
+      //  Group group = new Group();
         String url = baseURL + "read"+ group.getId();
         System.out.println("URL"+url);
         ResponseEntity <Group> responseEntity = restTemplate.getForEntity(url,Group.class);
@@ -74,7 +74,7 @@ public class GroupControllerTest {
     @Test
     public void c_update(){
         
-        Group group = new Group();
+       // Group group = new Group();
         Group update = new Group.Builder().copy(group).setName("Group thirteen").build();
         String url = baseURL + "update";
         System.out.println("URL:"+ url);

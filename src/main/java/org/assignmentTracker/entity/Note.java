@@ -1,22 +1,31 @@
 package org.assignmentTracker.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import java.util.Date;
+import java.util.Set;
 
+@Entity
 public class Note {
-
+    @Id
     private int id;
     private String description,text;
     private  Date dateCreated;
-    private User creator;
 
-    private Note() {}
+   // @OneToMany
+   // private User creator;
+
+    @OneToMany
+    private Set<User> creator;
+    protected Note() {}
 
     private Note(Builder builder){
         this.id = builder.id;
         this.description = builder.description;
         this.text = builder.text;
         this.dateCreated = builder.dateCreated;
-        this.creator = builder.creator;
+        this.creator = (Set<User>) builder.creator;
 
     }// builder constructor
 
@@ -37,7 +46,7 @@ public class Note {
     }
 
     public User getCreator() {
-        return creator;
+        return (User) creator;
     }
 
     @Override
@@ -94,7 +103,7 @@ public class Note {
             this.description = note.description;
             this.text = note.text;
             this.dateCreated = note.dateCreated;
-            this.creator = note.creator;
+            this.creator = (User) note.creator;
             return this;
 
         } // copy builder method

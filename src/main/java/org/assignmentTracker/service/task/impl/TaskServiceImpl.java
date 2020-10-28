@@ -3,10 +3,12 @@ package org.assignmentTracker.service.task.impl;
 import org.assignmentTracker.entity.Task;
 import org.assignmentTracker.repository.task.impl.TaskRepositoryImpl;
 import org.assignmentTracker.service.task.TaskService;
+import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
 
+@Service
 public class TaskServiceImpl implements TaskService {
 
     private static TaskServiceImpl service = null;

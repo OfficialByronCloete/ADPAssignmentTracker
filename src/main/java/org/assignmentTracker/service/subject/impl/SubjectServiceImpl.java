@@ -8,31 +8,28 @@ package org.assignmentTracker.service.subject.impl;
  */
 
 import org.assignmentTracker.entity.Subject;
-import org.assignmentTracker.repository.subject.impl.SubjectRepositoryImpl;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.assignmentTracker.repository.subject.ISubjectRepository;
 import org.assignmentTracker.service.subject.ISubjectService;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.stream.Collectors;
+
 @Service
 public class SubjectServiceImpl implements ISubjectService {
 
-    private static ISubjectService service = null;
-    private SubjectRepositoryImpl Repository ;
+    @Autowired
+    //ISubjectRepositoryImpl
+    private ISubjectRepository Repository ;
 
-    private SubjectServiceImpl(){
-        this.Repository = SubjectRepositoryImpl.getRepository();
-    }
-
-    public static ISubjectService getService(){
-        if(service == null) service = new SubjectServiceImpl();
-        return service;
-    }
 
     @Override
     public Set<Subject> getAll() {
-        return this.Repository.getAll();
+        return this.Repository.findAll().stream().collect(Collectors.toSet());
     }
+
 
     @Override
     public Set<Subject> getAllLectureThatStartWithA() {
@@ -50,22 +47,23 @@ public class SubjectServiceImpl implements ISubjectService {
 
     @Override
     public Subject create(Subject subject) {
-        return this.Repository.create(subject);
+        return this.Repository.save(subject);
     }
 
     @Override
     public Subject read(Integer Id) {
-        return this.Repository.read(Id);
+        return this.Repository.findById(Id).orElseGet(null);
     }
 
     @Override
     public Subject update(Subject subject) {
-        return this.Repository.update(subject);
+        return this.Repository.save(subject);
     }
 
     @Override
     public boolean delete(Integer Id) {
-        return this.Repository.delete(Id);
+        this.Repository.deleteById(Id);
+        return !this.Repository.existsById(Id);
     }
 
 }

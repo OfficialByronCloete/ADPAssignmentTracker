@@ -3,11 +3,12 @@ package org.assignmentTracker.repositoryTest;
 import org.assignmentTracker.entity.Group;
 import org.assignmentTracker.factory.GroupFactory;
 import org.assignmentTracker.repository.group.GroupRepository;
-import org.assignmentTracker.repository.group.impl.GroupRepositoryImpl;
+
 import org.junit.Assert;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import static org.junit.Assert.*;
 
@@ -17,13 +18,14 @@ import static org.junit.Assert.*;
  * Desc: group repository test class
  * Date: 30 August 2020
  */
-
+/*
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 
 
 public class GroupRepositoryImplTest {
 
-    private static GroupRepository repository = GroupRepositoryImpl.getRepository();
+    @Autowired
+    private static GroupRepository repository ;
     private static Group group = GroupFactory.createGroup("Group 13",
             "Arinze Anikwue","Application Development Practice");
 
@@ -36,7 +38,7 @@ public class GroupRepositoryImplTest {
     @Test
     public void a_create() {
 
-        Group created = repository.create(group);
+        Group created = repository.save(group);
         Assert.assertEquals(group.getId() , created.getId());
         System.out.println("Created: "+ created);
     }
@@ -51,7 +53,7 @@ public class GroupRepositoryImplTest {
     public void c_update() {
 
         Group update = new Group.Builder().copy(group).setName("Group thirteen").build();
-        update = repository.update(update);
+        update = repository.save(update);
         System.out.println("Update: "+ update);
 
     }
@@ -63,3 +65,4 @@ public class GroupRepositoryImplTest {
         Assert.assertTrue(deleted);
     }
 }
+*/

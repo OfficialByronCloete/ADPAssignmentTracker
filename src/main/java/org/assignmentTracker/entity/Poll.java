@@ -1,16 +1,28 @@
 package org.assignmentTracker.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import java.util.List;
 
+@Entity
 public class Poll {
 
+    @Id
     private int id;
+
+    @OneToMany
     private List<Choice> choices;
+
+    @OneToOne
     private User createdBy;
+
+    @OneToOne
     private Member voters;
     private String votes;
 
-    public Poll(){}
+    protected Poll(){}
 
 
     public Poll  (Builder builder){
