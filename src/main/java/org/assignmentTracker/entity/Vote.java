@@ -1,7 +1,7 @@
 package org.assignmentTracker.entity;
 
 
-import java.io.Serializable;
+import javax.persistence.*;
 
 /**
  * @author Claude De-Tchambila
@@ -9,14 +9,17 @@ import java.io.Serializable;
  * Desc: Entity/Vote object for vote
  * Date: 5 July 2020
  */
+@Entity
+@Embeddable
 public class Vote {
 
-    //Variables
+    @Id
     private int id;
+
+    @OneToOne
     private User voter;
 
-    //constructor
-    private Vote() {}
+    protected Vote() {}
 
     private Vote(Builder builder) {
         this.id = builder.id;
@@ -45,7 +48,6 @@ public class Vote {
         private User voter;
 
         public Builder() {
-
         }
 
         public Builder setId(int id) {
@@ -59,11 +61,7 @@ public class Vote {
         }
 
         public Vote build() {
-            Vote vote = new Vote();
-            vote.id = this.id;
-            vote.voter = this.voter;
-
-            return vote;
+            return new Vote(this);
         }
 
         public Builder copy(Vote vote) {
