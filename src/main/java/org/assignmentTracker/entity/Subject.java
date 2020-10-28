@@ -5,7 +5,7 @@ import javax.persistence.Id;
 import java.util.Date;
 
 /**
- *
+ *217132057
  */
 @Entity
 public class Subject {
@@ -14,7 +14,7 @@ public class Subject {
     private int id;
     private String name,code,lecture;
     private Date dates;
-
+//protected
     protected Subject() {}
 
     private Subject(Builder builder){

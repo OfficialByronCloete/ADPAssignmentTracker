@@ -22,6 +22,7 @@ import java.util.Date;
 public class SubjectServiceImplTest {
 
     @Autowired
+    //    private ISubjectService service;
     private ISubjectService service;
     private static Subject subject = SubjectFactory.createSubject("Applications Development Practice", "adp372s", "assignments SDLC", new Date());
     private static Subject subject1 = SubjectFactory.createSubject("Applications Development Theory", "adt372s", "Chapter 4 SDLC", new Date());

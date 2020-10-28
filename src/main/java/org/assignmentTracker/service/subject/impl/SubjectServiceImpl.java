@@ -21,6 +21,7 @@ import java.util.stream.Collectors;
 public class SubjectServiceImpl implements ISubjectService {
 
     @Autowired
+    //ISubjectRepositoryImpl
     private ISubjectRepository Repository ;
 
 
@@ -62,8 +63,7 @@ public class SubjectServiceImpl implements ISubjectService {
     @Override
     public boolean delete(Integer Id) {
         this.Repository.deleteById(Id);
-        if (this.Repository.existsById(Id)) return false;
-        return true;
+        return !this.Repository.existsById(Id);
     }
 
 }
