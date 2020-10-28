@@ -16,6 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * Desc: test class member sercvice impl
  * Date: 04 September 2020
  */
+
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class MemberServiceImplTest {
 
