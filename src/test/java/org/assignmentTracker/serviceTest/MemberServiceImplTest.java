@@ -16,7 +16,6 @@ import org.junit.runners.MethodSorters;
  * Desc: test class member sercvice impl
  * Date: 04 September 2020
  */
-
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class MemberServiceImplTest {
 
