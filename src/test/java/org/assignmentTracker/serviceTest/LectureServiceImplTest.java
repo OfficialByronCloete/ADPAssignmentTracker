@@ -17,15 +17,13 @@ import org.junit.Assert;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
-import org.springframework.beans.factory.annotation.Autowired;
 
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class LectureServiceImplTest {
 
 
-    @Autowired
-    private static ILectureService service ;
+    private static ILectureService service = LectureServiceImpl.getService();
     private static Lecture lecture = LectureFactory.newLecture("Justin","Kokolo","justu@","9488","5");
     private static Lecture lecture1 = LectureFactory.newLecture("Loreil","Kabs","justu@","9488","5");
     private static Lecture lecture2 = LectureFactory.newLecture("Louis","Roland","justu@","9488","5");

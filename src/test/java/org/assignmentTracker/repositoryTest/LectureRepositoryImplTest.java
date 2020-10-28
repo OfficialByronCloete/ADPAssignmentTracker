@@ -3,6 +3,7 @@ package org.assignmentTracker.repositoryTest;
 import org.assignmentTracker.entity.Lecture;
 import org.assignmentTracker.factory.LectureFactory;
 import org.assignmentTracker.repository.lecture.LectureRepository;
+import org.assignmentTracker.repository.lecture.impl.LectureRepositoryImpl;
 import org.junit.Assert;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
@@ -16,7 +17,7 @@ import static org.junit.Assert.*;
  * Desc: class that test lecture repository impl
  * Date: 28 August 2020
  */
-/*@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class LectureRepositoryImplTest {
 
 
@@ -67,4 +68,4 @@ public class LectureRepositoryImplTest {
     public void d_getAll() {
         System.out.println("Get all: " + repository.getAll());
     }
-}*/
+}

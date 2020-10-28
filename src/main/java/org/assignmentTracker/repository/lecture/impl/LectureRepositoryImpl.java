@@ -13,7 +13,7 @@ import java.util.Set;
  * Date: 28 August 2020
  */
 
-/*public class LectureRepositoryImpl implements LectureRepository {
+public class LectureRepositoryImpl implements LectureRepository {
 
     private static LectureRepositoryImpl repository = null;
     private Set<Lecture> lectureDB;
@@ -73,4 +73,4 @@ import java.util.Set;
         return false;
     }
 
-}*/
+}

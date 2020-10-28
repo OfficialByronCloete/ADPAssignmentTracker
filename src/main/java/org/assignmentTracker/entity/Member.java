@@ -1,8 +1,5 @@
 package org.assignmentTracker.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-
 /**
  * @author  @JustinKokolo
  * Student Number: 218044194
@@ -10,14 +7,13 @@ import javax.persistence.Id;
  * Date: 05 July 2020
  */
 
-@Entity
+
 public class Member {
 
-    @Id
     private int id;
     private int  assignment_id ;
 
-    protected   Member(){
+    private  Member(){
 
     }
 

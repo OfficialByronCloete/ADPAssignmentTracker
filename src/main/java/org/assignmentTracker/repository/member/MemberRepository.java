@@ -2,8 +2,6 @@ package org.assignmentTracker.repository.member;
 
 import org.assignmentTracker.entity.Member;
 import org.assignmentTracker.repository.IRepository;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
 import java.util.Set;
 
@@ -14,8 +12,7 @@ import java.util.Set;
  * Date: 28 August 2020
  */
 
-@Repository
-public interface MemberRepository extends JpaRepository<Member , Integer> {
+public interface MemberRepository extends IRepository<Member,Integer> {
 
-    //Set<Member> getAll();
+    Set<Member> getAll();
 }

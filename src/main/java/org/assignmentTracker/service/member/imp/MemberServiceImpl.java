@@ -10,27 +10,33 @@ package org.assignmentTracker.service.member.imp;
 
 import org.assignmentTracker.entity.Member;
 import org.assignmentTracker.repository.member.MemberRepository;
+import org.assignmentTracker.repository.member.impl.MemberRepositoryImpl;
 import org.assignmentTracker.service.member.IMemberService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 @Service
 public class MemberServiceImpl implements IMemberService {
 
     private static IMemberService service = null;
-
-    @Autowired
     private MemberRepository repository;
 
+    public  MemberServiceImpl(){
+
+        this.repository = MemberRepositoryImpl.getRepository();
+    }
+
+    public static IMemberService  getService(){
+        if(service == null) service = new MemberServiceImpl();
+        return service;
+    }
 
 
     @Override
     public Set<Member> getAll() {
-        return this.repository.findAll().stream().collect(Collectors.toSet());
+        return this.repository.getAll();
     }
 
     @Override
@@ -52,27 +58,24 @@ public class MemberServiceImpl implements IMemberService {
     @Override
     public Member create(Member member) {
 
-        return this.repository.save(member);
+        return this.repository.create(member);
     }
 
     @Override
     public Member read(Integer id) {
 
-        return this.repository.findById(id).orElseGet(null);
+        return this.repository.read(id);
     }
 
     @Override
     public Member update(Member member) {
 
-
-        return this.repository.save(member);
+        return this.repository.update(member);
     }
 
     @Override
     public boolean delete(Integer id) {
 
-       this.repository.deleteById(id);
-       if(this.repository.existsById(id)) return false;
-       else return true;
+        return this.repository.delete(id) ;
     }
 }

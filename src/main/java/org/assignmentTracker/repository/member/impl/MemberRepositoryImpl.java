@@ -13,7 +13,7 @@ import java.util.Set;
  * Date: 28 August 2020
  */
 
-/* public class MemberRepositoryImpl implements MemberRepository {
+public class MemberRepositoryImpl implements MemberRepository {
 
     private static MemberRepositoryImpl repository = null;
     private Set<Member> memberDB;
@@ -78,4 +78,4 @@ import java.util.Set;
 
 
 
-}*/
+}
