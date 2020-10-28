@@ -17,6 +17,7 @@
 target/classes/org/assignmentTracker/repository/task/impl/TaskRepositoryImpl.class  
 target/classes/org/assignmentTracker/service/user/impl/UserService.class
 target/test-classes/org/assignmentTracker/repositoryTest/ChoiceRepositoryTest.class
+target/*
 
 # Generated files
 .idea/**/contentModel.xml
