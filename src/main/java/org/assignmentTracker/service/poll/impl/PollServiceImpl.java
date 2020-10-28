@@ -2,11 +2,14 @@ package org.assignmentTracker.service.poll.impl;
 
 import org.assignmentTracker.entity.Poll;
 import org.assignmentTracker.repository.poll.PollRepository;
-import org.assignmentTracker.repository.poll.impl.PollRepositoryImpl;
+//import org.assignmentTracker.repository.poll.impl.PollRepositoryImpl;
 import org.assignmentTracker.service.poll.PollService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
+import java.util.stream.Collectors;
+
 /**
  * @author: Sinovuyo May
  * Student number: 217298915
@@ -16,47 +19,36 @@ import java.util.Set;
 @Service
 public class PollServiceImpl implements PollService {
 
-
-    private static PollService service = null;
+    @Autowired
     private PollRepository repository ;
-
-    private PollServiceImpl() {
-
-        this.repository = PollRepositoryImpl.getRepository();
-    }
-
-    public static PollService getService (){
-
-        if(service == null)
-            service = new PollServiceImpl();
-
-            return service;
-    }
 
 
     @Override
     public Set<Poll> getAll() {
-        return this.repository.getAll();
+        return this.repository.findAll().stream().collect(Collectors.toSet());
     }
 
     @Override
     public Poll create(Poll poll) {
 
-        return this.repository.create(poll);
+        return this.repository.save(poll);
     }
 
     @Override
     public Poll read(Integer integer) {
-        return this.repository.read(integer);
+        return this.repository.findById(integer).orElseGet(null);
     }
 
     @Override
     public Poll update(Poll poll) {
-        return this.repository.update(poll);
+        return this.repository.save(poll);
     }
 
     @Override
     public boolean delete(Integer integer) {
-        return this.repository.delete(integer);
+
+        this.repository.deleteById(integer);
+        if(this.repository.existsById(integer)) return false;
+        else return true;
     }
 }

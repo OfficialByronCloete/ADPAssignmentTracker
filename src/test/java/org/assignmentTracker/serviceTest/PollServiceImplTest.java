@@ -4,13 +4,14 @@ import org.assignmentTracker.entity.Group;
 import org.assignmentTracker.entity.Poll;
 import org.assignmentTracker.factory.PollFactory;
 import org.assignmentTracker.repository.poll.PollRepository;
-import org.assignmentTracker.repository.poll.impl.PollRepositoryImpl;
+//import org.assignmentTracker.repository.poll.impl.PollRepositoryImpl;
 import org.assignmentTracker.service.poll.PollService;
 import org.assignmentTracker.service.poll.impl.PollServiceImpl;
 import org.junit.Assert;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Set;
 
@@ -25,7 +26,8 @@ import static org.junit.Assert.*;
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class PollServiceImplTest {
 
-    private static PollService service = PollServiceImpl.getService();
+    @Autowired
+    private static PollService service ;
     private static Poll poll = PollFactory.createPoll(null,null,null,"No");
 
     @Test

@@ -2,7 +2,10 @@ package org.assignmentTracker.repository.group;
 
 import org.assignmentTracker.entity.Group;
 import org.assignmentTracker.repository.IRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
+import javax.persistence.criteria.CriteriaBuilder;
 import java.util.Set;
 
 /**
@@ -11,9 +14,9 @@ import java.util.Set;
  * Desc:
  * Date: 30 August 2020
  */
+@Repository
+public interface GroupRepository extends JpaRepository<Group, Integer> {
 
-public interface GroupRepository extends IRepository<Group, Integer> {
 
-    Set<Group> getAll();
 
 }
