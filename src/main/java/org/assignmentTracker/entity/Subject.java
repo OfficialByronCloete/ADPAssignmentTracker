@@ -1,14 +1,21 @@
 package org.assignmentTracker.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Date;
 
+/**
+ *
+ */
+@Entity
 public class Subject {
 
+    @Id
     private int id;
     private String name,code,lecture;
     private Date dates;
 
-    private Subject() {}
+    protected Subject() {}
 
     private Subject(Builder builder){
         this.id = builder.id;

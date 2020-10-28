@@ -1,15 +1,18 @@
 package org.assignmentTracker.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Date;
+
 
 public class Note {
 
-    private int id;
+        private int id;
     private String description,text;
     private  Date dateCreated;
     private User creator;
 
-    private Note() {}
+    protected Note() {}
 
     private Note(Builder builder){
         this.id = builder.id;

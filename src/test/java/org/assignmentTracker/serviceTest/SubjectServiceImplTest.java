@@ -10,18 +10,19 @@ package org.assignmentTracker.serviceTest;
 import org.assignmentTracker.entity.Subject;
 import org.assignmentTracker.factory.SubjectFactory;
 import org.assignmentTracker.service.subject.ISubjectService;
-import org.assignmentTracker.service.subject.impl.SubjectServiceImpl;
 import org.junit.Assert;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Date;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class SubjectServiceImplTest {
 
-    private static ISubjectService service = SubjectServiceImpl.getService();
+    @Autowired
+    private ISubjectService service;
     private static Subject subject = SubjectFactory.createSubject("Applications Development Practice", "adp372s", "assignments SDLC", new Date());
     private static Subject subject1 = SubjectFactory.createSubject("Applications Development Theory", "adt372s", "Chapter 4 SDLC", new Date());
     private static Subject subject2 = SubjectFactory.createSubject("Elective", "ICE372s", "chapter 3 angular Frameworks",  new Date());

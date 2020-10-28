@@ -8,12 +8,13 @@ package org.assignmentTracker.repository.subject;
  */
 
 import org.assignmentTracker.entity.Subject;
-import org.assignmentTracker.repository.IRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
 
 import java.util.Set;
+@Repository
+public interface ISubjectRepository extends JpaRepository<Subject, Integer> {
 
-public interface ISubjectRepository extends IRepository<Subject, Integer> {
-
-    Set<Subject> getAll();
 
 }
