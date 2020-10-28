@@ -1,25 +1,31 @@
 package org.assignmentTracker.service.user.impl;
 
 import org.assignmentTracker.entity.User;
-import org.assignmentTracker.repository.user.IUserRepository;
+import org.assignmentTracker.repository.user.impl.UserRepository;
 import org.assignmentTracker.service.user.IUserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 @Service
 public class UserService implements IUserService {
 
     private static IUserService service = null;
-    @Autowired
-    private IUserRepository repo;
+    private UserRepository repo;
+
+    private UserService(){
+        this.repo = UserRepository.getRepo();
+    }
+
+    public static IUserService getService(){
+        if(service == null) service = new UserService();
+        return service;
+    }
 
     @Override
     public Set<User> getAll() {
-        return this.repo.findAll().stream().collect(Collectors.toSet());
+        return this.repo.getAll();
     }
 
     @Override
@@ -35,22 +41,20 @@ public class UserService implements IUserService {
     }
 
     @Override
-    public User create(User user) { return this.repo.save(user); }
+    public User create(User user) { return this.repo.create(user); }
 
     @Override
     public User read(Integer integer) {
-        return this.repo.findById(integer).orElseGet(null);
+        return this.repo.read(integer);
     }
 
     @Override
     public User update(User user) {
-        return this.repo.save(user);
+        return this.repo.update(user);
     }
 
     @Override
     public boolean delete(Integer integer) {
-        this.repo.deleteById(integer);
-        if(this.repo.existsById(integer)) return false;
-        else return true;
+        return this.repo.delete(integer);
     }
 }
