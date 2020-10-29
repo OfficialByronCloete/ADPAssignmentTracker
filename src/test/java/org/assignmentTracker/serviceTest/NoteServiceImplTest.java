@@ -14,6 +14,8 @@ import org.junit.Assert;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
+import org.springframework.beans.factory.annotation.Autowired;
+
 import java.util.Date;
 
 
@@ -21,7 +23,8 @@ import java.util.Date;
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class NoteServiceImplTest {
 
-    private static INoteService service = NoteServiceImpl.getService();
+    @Autowired
+    private  INoteService service ;
    private static Note note = NoteFactory.createNote("Chapter 101", "Summary", UserFactory.createUser("Byron", "Cloete", "wordpass", "byroncloete7@gmail.com"), new Date());
    private static Note note1 = NoteFactory.createNote("Chater 102", "Core Notes", UserFactory.createUser("Lyse", "Irakoze", "pass", "iraLyse@gmail.com"), new Date());
    private static Note note2 = NoteFactory.createNote("Chapter 103", "keyword", UserFactory.createUser("John", "Doe", "jdoes", "JohnDoe@gmail.com"), new Date());
