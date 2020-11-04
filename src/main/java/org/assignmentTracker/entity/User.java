@@ -1,5 +1,6 @@
 package org.assignmentTracker.entity;
 
+import javax.persistence.Embeddable;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.util.Date;
@@ -11,6 +12,7 @@ Desc: Base User class using builder
  */
 
 @Entity
+@Embeddable
 public class User {
 
     @Id

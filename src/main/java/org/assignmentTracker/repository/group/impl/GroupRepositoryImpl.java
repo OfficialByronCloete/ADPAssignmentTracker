@@ -13,7 +13,8 @@ import java.util.Set;
  * Desc:
  * Date: 30 August 2020
  */
-
+/*
+@Deprecated
 public class GroupRepositoryImpl implements GroupRepository {
 
     private static GroupRepository repository = null;
@@ -76,4 +77,4 @@ public class GroupRepositoryImpl implements GroupRepository {
         return false;
     }
 }
-
+*/

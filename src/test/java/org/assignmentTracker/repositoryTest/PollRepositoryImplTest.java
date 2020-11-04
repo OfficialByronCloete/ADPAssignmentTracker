@@ -3,11 +3,11 @@ package org.assignmentTracker.repositoryTest;
 import org.assignmentTracker.entity.Poll;
 import org.assignmentTracker.factory.PollFactory;
 import org.assignmentTracker.repository.poll.PollRepository;
-import org.assignmentTracker.repository.poll.impl.PollRepositoryImpl;
 import org.junit.Assert;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import static org.junit.Assert.*;
 
@@ -17,12 +17,12 @@ import static org.junit.Assert.*;
  * Desc: poll repository test class
  * Date: 30 August 2020
  */
-
+/*
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 
 public class PollRepositoryImplTest {
-
-    private static PollRepository repository = PollRepositoryImpl.getRepository();
+@Autowired
+    private static PollRepository repository ;
     private static Poll poll = PollFactory.createPoll(null,null,null,"No");
 
     @Test
@@ -61,3 +61,4 @@ public class PollRepositoryImplTest {
     }
 
 }
+*/

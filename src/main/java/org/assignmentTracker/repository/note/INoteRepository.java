@@ -8,12 +8,14 @@ package org.assignmentTracker.repository.note;
  */
 
 import org.assignmentTracker.entity.Note;
-import org.assignmentTracker.repository.IRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.Set;
 
-public interface INoteRepository extends IRepository<Note, Integer> {
+@Repository
+public interface INoteRepository extends JpaRepository<Note, Integer> {
 
-    Set<Note> getAll();
+   // Set<Note> getAll();
 
 }

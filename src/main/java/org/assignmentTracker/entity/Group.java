@@ -1,13 +1,18 @@
 package org.assignmentTracker.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Group {
 
-
+    @Id
     private int id;
     private String name;
     private String lecture;
     private String subject;
 
+    protected Group() {}
 
     public Group (Builder builder){
         this.id = builder.id;
@@ -17,7 +22,7 @@ public class Group {
 
     }
 
-    public Group() {}
+
 
     public static class Builder{
 

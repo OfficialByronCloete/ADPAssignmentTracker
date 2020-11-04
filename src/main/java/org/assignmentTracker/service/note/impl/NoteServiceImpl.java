@@ -8,30 +8,25 @@ package org.assignmentTracker.service.note.impl;
  */
 
 import org.assignmentTracker.entity.Note;
-import org.assignmentTracker.repository.note.impl.NoteRepositoryImpl;
+import org.assignmentTracker.repository.note.INoteRepository;
 import org.assignmentTracker.service.note.INoteService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.stream.Collectors;
+
 @Service
 public class NoteServiceImpl implements INoteService {
 
-    private static INoteService service = null;
-    private NoteRepositoryImpl Repository ;
+    @Autowired
+    private INoteRepository Repository ;
 
-    private NoteServiceImpl(){
-        this.Repository = NoteRepositoryImpl.getRepository();
-    }
-
-    public static INoteService getService(){
-        if(service == null) service = new NoteServiceImpl();
-        return service;
-    }
 
     @Override
     public Set<Note> getAll() {
-        return this.Repository.getAll();
+        return this.Repository.findAll().stream().collect(Collectors.toSet());
     }
 
     @Override
@@ -50,22 +45,23 @@ public class NoteServiceImpl implements INoteService {
 
     @Override
     public Note create(Note note) {
-        return this.Repository.create(note);
+        return this.Repository.save(note);
     }
 
     @Override
     public Note read(Integer Id) {
-        return this.Repository.read(Id);
+        return this.Repository.findById(Id).orElseGet(null);
     }
 
     @Override
     public Note update(Note note) {
-        return this.Repository.update(note);
+        return this.Repository.save(note);
     }
 
     @Override
     public boolean delete(Integer Id) {
-        return this.Repository.delete(Id);
+        this.Repository.deleteById(Id);
+        return !this.Repository.existsById(Id);
     }
 
 }

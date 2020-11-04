@@ -1,7 +1,12 @@
 package org.assignmentTracker.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import java.util.Date;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * @author Claude De-Tchambila
@@ -9,17 +14,39 @@ import java.util.List;
  * Desc: Entity/Assignment object for assignment
  * Date: 5 July 2020
  */
+@Entity
 public class Assignment {
 
+    @Id
     private int id;
+
     private String name;
+
+    @OneToOne
     private Subject subject;
+
     private Date dateAssigned;
+
+    @OneToMany
     private List<Admin> admins;
+
+    @OneToMany
     private List<Member> members;
+
+    @OneToOne
     private User creator;
 
-    private Assignment() {
+    protected Assignment() {
+    }
+
+    private Assignment(Builder builder) {
+        id = builder.id;
+        name = builder.name;
+        subject = builder.subject;
+        dateAssigned = builder.dateAssigned;
+        admins = builder.admins;
+        members = builder.members;
+        creator = builder.creator;
     }
 
     public int getId() {
@@ -122,14 +149,7 @@ public class Assignment {
         }
 
         public Assignment build() {
-            Assignment assignment = new Assignment();
-            assignment.id = this.id;
-            assignment.name = this.name;
-            assignment.subject = this.subject;
-            assignment.dateAssigned = this.dateAssigned;
-            assignment.admins = this.admins;
-            assignment.members = this.members;
-            assignment.creator = this.creator;
+            Assignment assignment = new Assignment(this);
 
             return assignment;
         }
@@ -145,6 +165,25 @@ public class Assignment {
             return this;
         }
 
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Assignment that = (Assignment) o;
+        return id == that.id &&
+                name.equals(that.name) &&
+                subject.equals(that.subject) &&
+                dateAssigned.equals(that.dateAssigned) &&
+                Objects.equals(admins, that.admins) &&
+                Objects.equals(members, that.members) &&
+                creator.equals(that.creator);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, subject, dateAssigned, admins, members, creator);
     }
 
     @Override

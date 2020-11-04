@@ -1,5 +1,9 @@
 package org.assignmentTracker.entity;
 
+import javax.persistence.Embeddable;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 /**
  * @author  @JustinKokolo
  * Student Number: 218044194
@@ -7,12 +11,18 @@ package org.assignmentTracker.entity;
  * Date: 05 July 2020
  */
 
+@Entity
+@Embeddable
 public class Lecture {
 
 
+    @Id
     private   int id;
     private String  name ,surname ,email, cell_num , room;
 
+
+    protected Lecture() {
+    }
 
     public Lecture(Builder builder) {
         this.id = builder.id;
