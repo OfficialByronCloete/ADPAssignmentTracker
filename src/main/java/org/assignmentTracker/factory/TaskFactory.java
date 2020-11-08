@@ -16,7 +16,7 @@ public class TaskFactory {
                 .setTaskId(taskId)
                 .setAssignmentId(assignmentId)
                 .setMemberId(memberId)
-                .setStudents(studentNumber)
+                .setStudentId(studentNumber)
                 .build();
         return task;
     }
