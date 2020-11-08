@@ -36,12 +36,16 @@ public class UserControllerTest {
     private TestRestTemplate restTemplate;
     private static User user;
     private final String baseURL = "http://localhost:8080/user";
+    private static String userName = "Byron";
+    private static String password = "password";
 
     @Test
     public void a_create(){
-        User newUser = UserFactory.createUser("Byron", "Cloete", "wordpass", "byroncloete7@gmail.com");
+        User newUser = UserFactory.createUser("Byron", "Cloete", "password", "byroncloete7@gmail.com");
         String url = baseURL + "/create";
-        ResponseEntity<User> response = restTemplate.postForEntity(url, newUser, User.class);
+        ResponseEntity<User> response = restTemplate.
+                withBasicAuth(userName, password).
+                postForEntity(url, newUser, User.class);
 
         assertNotNull(response.getBody());
         user = response.getBody();
@@ -58,7 +62,7 @@ public class UserControllerTest {
         int id = user.getID();
         String url = baseURL + "/read" + id;
 
-        ResponseEntity<User> getResponse = restTemplate.getForEntity(url, User.class);
+        ResponseEntity<User> getResponse = restTemplate.withBasicAuth(userName, password).getForEntity(url, User.class);
 
         assertNotNull(getResponse.getBody());
 
@@ -72,7 +76,7 @@ public class UserControllerTest {
         String url = baseURL + "/update";
         String oldPassword = user.getName();
         user = new User.Builder().copy(user).setPassword("mynewpassword").build();
-        restTemplate.put(url, user);
+        restTemplate.withBasicAuth(userName, password).put(url, user);
 
         assertNotEquals(user.getPassword(), oldPassword);
 
@@ -82,7 +86,9 @@ public class UserControllerTest {
         String url = baseURL + "/delete/" + user.getID();
         restTemplate.delete(url);
 
-        ResponseEntity<List> response = restTemplate.getForEntity(baseURL + "/all", List.class);
+        ResponseEntity<List> response = restTemplate
+                .withBasicAuth(userName, password)
+                .getForEntity(baseURL + "/all", List.class);
 
         System.out.println(response.getBody());
         System.out.println(response.getStatusCode());
@@ -93,7 +99,9 @@ public class UserControllerTest {
         String url = baseURL + "/all";
         HttpHeaders headers = new HttpHeaders();
         HttpEntity<String> entity = new HttpEntity<>(null, headers);
-        ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.GET, entity, String.class);
+        ResponseEntity<String> response = restTemplate
+                .withBasicAuth(userName, password)
+                .exchange(url, HttpMethod.GET, entity, String.class);
 
         System.out.println("Get all assignments");
         System.out.println(response.getBody());
