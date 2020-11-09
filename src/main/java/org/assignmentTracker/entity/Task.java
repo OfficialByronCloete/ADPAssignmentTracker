@@ -1,5 +1,6 @@
 package org.assignmentTracker.entity;
 
+import javax.persistence.Embeddable;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.util.Objects;
@@ -11,6 +12,7 @@ import java.util.Objects;
  * */
 
 @Entity
+@Embeddable
 public class Task {
     @Id
     private int taskId;
