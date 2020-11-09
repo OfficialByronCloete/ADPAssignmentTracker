@@ -38,23 +38,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers(HttpMethod.GET, "/assignmenttrackerdb/**/read/**", "/assignmenttrackerdb/**/all").hasRole(USER_ROLE)
                 .antMatchers(HttpMethod.POST, "/Lecture/**").hasRole(ADMIN_ROLE)
                 .antMatchers(HttpMethod.DELETE, "/Lecture/delete/**").hasRole(ADMIN_ROLE)
-                .antMatchers(HttpMethod.GET, "/Lecture/read/**", "/Product/list/").hasRole(USER_ROLE)
+                .antMatchers(HttpMethod.GET, "/Lecture/read/**", "/Lecture/all/").hasRole(USER_ROLE)
                 .antMatchers(HttpMethod.POST, "/Member/**").hasRole(ADMIN_ROLE)
                 .antMatchers(HttpMethod.DELETE, "/Member/delete/**").hasRole(ADMIN_ROLE)
-                .antMatchers(HttpMethod.GET, "/Member/read/**", "/Product/list/").hasRole(USER_ROLE)
-
-                        .antMatchers(HttpMethod.POST, "/subject/create").hasRole(ADMIN_ROLE)
-                        .antMatchers(HttpMethod.POST, "/note/create").hasRole(USER_ROLE)
-
-                        .antMatchers(HttpMethod.POST, "/subject/update").hasRole(ADMIN_ROLE)
-                        .antMatchers(HttpMethod.POST, "/note/update/**").hasRole(USER_ROLE)
-
-                        .antMatchers(HttpMethod.DELETE, "/subject/delete/**").hasRole(ADMIN_ROLE)
-                        .antMatchers(HttpMethod.DELETE, "/note/delete/**").hasRole(USER_ROLE)
-
-                        .antMatchers(HttpMethod.GET, "/subject/read/**", "/note/read/**").hasRole(ADMIN_ROLE)
-                        .antMatchers(HttpMethod.GET, "/subject/all", "/note/all").hasRole(ADMIN_ROLE)
-
+                .antMatchers(HttpMethod.GET, "/Member/read/**", "/Member/all/").hasRole(USER_ROLE)
 
                 .and()
                 .csrf().disable()
