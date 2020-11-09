@@ -40,6 +40,8 @@ public class NoteControllerTest {
     private TestRestTemplate restTemplate;
     private final String baseURL = "http://localhost:8080/note";
     private static Note note;
+
+    //security config implementation
     private static String userName = "Byron";
     private static String password = "password";
 

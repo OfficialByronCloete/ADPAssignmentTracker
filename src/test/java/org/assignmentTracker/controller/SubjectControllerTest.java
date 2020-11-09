@@ -38,6 +38,8 @@ public class SubjectControllerTest {
     private TestRestTemplate restTemplate;
     private final String baseURL = "http://localhost:8080/subject";
     private static Subject subject;
+
+    //security config implementation
     private static String userName = "Byron";
     private static String password = "password";
 
