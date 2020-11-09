@@ -7,6 +7,7 @@ package org.assignmentTracker.controller;
  */
 
 import org.assignmentTracker.entity.Subject;
+import org.assignmentTracker.entity.User;
 import org.assignmentTracker.factory.SubjectFactory;
 import org.junit.Assert;
 import org.junit.FixMethodOrder;
@@ -38,6 +39,10 @@ public class SubjectControllerTest {
     private final String baseURL = "http://localhost:8080/subject";
     private static Subject subject;
 
+    //security config implementation
+    private static String userName = "Byron";
+    private static String password = "password";
+
 
     @Test
     public void a_create(){
@@ -45,7 +50,9 @@ public class SubjectControllerTest {
         Date dates = new Date();
         Subject newSubject = SubjectFactory.createSubject("Applications Development Theory","ADT(362S)","Agile Development",dates);
         String url = baseURL + "/create";
-        ResponseEntity<Subject> postResponse = restTemplate.postForEntity(url, newSubject, Subject.class);
+        ResponseEntity<Subject> postResponse = restTemplate.
+                withBasicAuth(userName, password).
+                postForEntity(url, newSubject, Subject.class);
         assertNotNull(postResponse.getBody());
         subject = postResponse.getBody();
         System.out.println("Create subject");
@@ -73,7 +80,7 @@ public class SubjectControllerTest {
         String url = baseURL + "updated";
         System.out.println("URL"+url);
         System.out.println("Post data"+ updated);
-        ResponseEntity<Subject> response =restTemplate.postForEntity(url,updated, Subject.class);
+        restTemplate.withBasicAuth(userName, password).put(url, subject);
         Assert.assertNotSame(subject,subject.getId());
 
     }
@@ -84,7 +91,8 @@ public class SubjectControllerTest {
         String url = baseURL + "/delete/"+subject.getId();
         System.out.println("URL"+url);
         restTemplate.delete(url);
-        ResponseEntity<List> response = restTemplate.getForEntity(baseURL+ "/all",List.class);
+        ResponseEntity<List> response = restTemplate.withBasicAuth(userName, password).
+                getForEntity(baseURL+ "/all",List.class);
         System.out.println(response.getBody());
 
     }
@@ -95,7 +103,8 @@ public class SubjectControllerTest {
         String url = baseURL + "/all";
         HttpHeaders headers = new HttpHeaders();
         HttpEntity<String> entity= new HttpEntity<>(null, headers);
-        ResponseEntity<String> response = restTemplate.exchange(url,HttpMethod.GET,entity, String.class);
+        ResponseEntity<String> response = restTemplate.withBasicAuth(userName, password).
+                exchange(url,HttpMethod.GET,entity, String.class);
         System.out.println("All subjects displayed");
         System.out.println(response.getBody());
 
