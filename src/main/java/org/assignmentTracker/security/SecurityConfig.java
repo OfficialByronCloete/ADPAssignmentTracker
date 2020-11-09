@@ -38,10 +38,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers(HttpMethod.GET, "/assignmenttrackerdb/**/read/**", "/assignmenttrackerdb/**/all").hasRole(USER_ROLE)
                 .antMatchers(HttpMethod.POST, "/Lecture/**").hasRole(ADMIN_ROLE)
                 .antMatchers(HttpMethod.DELETE, "/Lecture/delete/**").hasRole(ADMIN_ROLE)
-                .antMatchers(HttpMethod.GET, "/Lecture/read/**", "/Product/list/").hasRole(USER_ROLE)
+                .antMatchers(HttpMethod.GET, "/Lecture/read/**", "/Lecture/all/").hasRole(USER_ROLE)
                 .antMatchers(HttpMethod.POST, "/Member/**").hasRole(ADMIN_ROLE)
                 .antMatchers(HttpMethod.DELETE, "/Member/delete/**").hasRole(ADMIN_ROLE)
-                .antMatchers(HttpMethod.GET, "/Member/read/**", "/Product/list/").hasRole(USER_ROLE)
+                .antMatchers(HttpMethod.GET, "/Member/read/**", "/Member/all/").hasRole(USER_ROLE)
                 .and()
                 .csrf().disable()
                 .formLogin().disable();
