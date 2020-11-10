@@ -41,6 +41,10 @@ public class NoteControllerTest {
     private final String baseURL = "http://localhost:8080/note";
     private static Note note;
 
+    //security config implementation
+    private static String userName = "Byron";
+    private static String password = "password";
+
 
 
 
@@ -50,7 +54,7 @@ public class NoteControllerTest {
         Note newNote = NoteFactory.createNote("Chapter 101", "Summary",
                 UserFactory.createUser("Byron", "Cloete", "wordpass", "byroncloete7@gmail.com"), new Date());
         String url = baseURL + "/note";
-        ResponseEntity<Note> postResponse = restTemplate.postForEntity(url, newNote, Note.class);
+        ResponseEntity<Note> postResponse = restTemplate.withBasicAuth(userName, password).postForEntity(url, newNote, Note.class);
 
         assertNotNull(postResponse.getBody());
         note = postResponse.getBody();
@@ -72,11 +76,11 @@ public class NoteControllerTest {
     @Test
     public void c_update(){
 
-       Note updated = new Note.Builder().copy(note).setText("Chapter 102").build();
+        Note updated = new Note.Builder().copy(note).setText("Chapter 102").build();
         String url = baseURL + "updated";
         System.out.println("URL"+url);
         System.out.println("Post data "+ updated);
-        ResponseEntity<Note> response =restTemplate.postForEntity(url,updated, Note.class);
+        restTemplate.withBasicAuth(userName, password).put(url,updated, Note.class);
         Assert.assertNotSame(note,note.getId());
 
     }
@@ -86,7 +90,7 @@ public class NoteControllerTest {
         String url = baseURL + "/all";
         HttpHeaders headers = new HttpHeaders();
         HttpEntity<String> entity= new HttpEntity<>(null, headers);
-        ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.GET,entity, String.class);
+        ResponseEntity<String> response = restTemplate.withBasicAuth(userName, password).exchange(url, HttpMethod.GET,entity, String.class);
         System.out.println("All subjects displayed");
         System.out.println(response.getBody());
 
@@ -97,7 +101,7 @@ public class NoteControllerTest {
         String url = baseURL + "/delete/" + note.getId();
         restTemplate.delete(url);
 
-        ResponseEntity<List> response = restTemplate.getForEntity(baseURL + "/all", List.class);
+        ResponseEntity<List> response = restTemplate.withBasicAuth(userName, password).getForEntity(baseURL + "/all", List.class);
 
         System.out.println(response.getBody());
     }

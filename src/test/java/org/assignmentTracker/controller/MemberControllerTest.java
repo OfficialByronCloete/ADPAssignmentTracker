@@ -34,6 +34,9 @@ public class MemberControllerTest {
 
     private static Member member = MemberFactory.createMember(5);
 
+    private static final String ADMIN_USERNAME = "lecturer";
+    private static final String ADMIN_PASSWORD = "lecturer-password";
+
     @Autowired
     private TestRestTemplate restTemplate;
     private String baseURL=  "http://localhost:8080/vote";
@@ -42,7 +45,9 @@ public class MemberControllerTest {
     public void a_create() {
 
         String url = baseURL + "create";
-        ResponseEntity<Member> postResponse = restTemplate.postForEntity(url, member,Member.class);
+        ResponseEntity<Member> postResponse = restTemplate
+                .withBasicAuth(ADMIN_USERNAME,ADMIN_PASSWORD)
+                .postForEntity(url, member,Member.class);
         assertNotNull(postResponse);
         assertNotNull(postResponse.getBody());
         member = postResponse.getBody();
@@ -54,7 +59,9 @@ public class MemberControllerTest {
     public void b_read() {
         String url = baseURL + "read/" + member.getId();
         System.out.println(url);
-        ResponseEntity<Member> response = restTemplate.getForEntity(url, Member.class);
+        ResponseEntity<Member> response = restTemplate
+                .withBasicAuth(ADMIN_USERNAME,ADMIN_PASSWORD)
+                .getForEntity(url, Member.class);
         assertEquals(member.getId(), response.getBody().getId());
     }
 
@@ -62,7 +69,9 @@ public class MemberControllerTest {
     public void c_update() {
         Member updated = new Member.Builder().copy(member).setAssignment_id(4).build();
         String url = baseURL + "update";
-        ResponseEntity<Member> response = restTemplate.postForEntity(url, updated, Member.class);
+        ResponseEntity<Member> response = restTemplate
+                .withBasicAuth(ADMIN_USERNAME,ADMIN_PASSWORD)
+                .postForEntity(url, updated, Member.class);
         assertEquals(member.getId(), response.getBody().getId());
     }
 
@@ -72,7 +81,9 @@ public class MemberControllerTest {
         String url = baseURL + "/all";
         HttpHeaders headers = new HttpHeaders();
         HttpEntity<String> entity = new HttpEntity<>(null, headers);
-        ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.GET, entity, String.class);
+        ResponseEntity<String> response = restTemplate
+                .withBasicAuth(ADMIN_USERNAME,ADMIN_PASSWORD)
+                .exchange(url, HttpMethod.GET, entity, String.class);
         System.out.println(response);
         System.out.println(response.getBody());
     }
@@ -80,6 +91,7 @@ public class MemberControllerTest {
     @Test
     public void e_delete() {
         String url = baseURL + "delete/" + member.getId();
-        restTemplate.delete(url);
+        restTemplate.withBasicAuth(ADMIN_USERNAME,ADMIN_PASSWORD)
+                .delete(url);
     }
 }
