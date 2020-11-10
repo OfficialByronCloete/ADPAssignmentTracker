@@ -33,8 +33,10 @@ public class GroupControllerTest {
 
     @Autowired
     private TestRestTemplate restTemplate;
-    private static  Group group;
+    private static  Group group = GroupFactory.createGroup( "Group 13",null,null);;
     private String baseURL = "http://localhost:8080/group";
+
+//    Group group = GroupFactory.createGroup( "Group 13",null,null);
    // Group group = GroupFactory.createGroup( "Group 13","Mr WC Rothman","Project 3");
 
     //security impl
