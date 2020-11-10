@@ -34,6 +34,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.httpBasic()
                 .and()
                 .authorizeRequests()
+                .antMatchers(HttpMethod.POST, "/assignment/create").hasRole(USER_ROLE)
+                .antMatchers(HttpMethod.GET, "/assignment/read/**").hasRole(USER_ROLE)
+                .antMatchers(HttpMethod.PUT, "/assignment/update").hasRole(USER_ROLE)
+                .antMatchers(HttpMethod.DELETE, "/assignment/delete/**").hasRole(USER_ROLE)
+
+                .antMatchers(HttpMethod.POST, "**/vote/create").hasRole(USER_ROLE)
+                .antMatchers(HttpMethod.GET, "**/vote/read/**").hasRole(USER_ROLE)
+                .antMatchers(HttpMethod.PUT, "**/vote/update").hasRole(USER_ROLE)
+                .antMatchers(HttpMethod.DELETE, "**/vote/delete/**").hasRole(USER_ROLE)
+
                 .antMatchers(HttpMethod.POST, "/assignmenttrackerdb/**/create", "/assignmenttrackerdb/**/delete/**").hasRole(ADMIN_ROLE)
                 .antMatchers(HttpMethod.GET, "/assignmenttrackerdb/**/read/**", "/assignmenttrackerdb/**/all").hasRole(USER_ROLE)
                 .antMatchers(HttpMethod.POST, "/Lecture/**").hasRole(ADMIN_ROLE)
