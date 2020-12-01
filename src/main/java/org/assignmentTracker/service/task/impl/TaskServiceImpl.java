@@ -19,6 +19,7 @@ public class TaskServiceImpl implements TaskService {
 
     @Override
     public Set<Task> getAll() {
+
         return this.repository.findAll().stream().collect(Collectors.toSet());
     }
 
@@ -35,11 +36,13 @@ public class TaskServiceImpl implements TaskService {
 
     @Override
     public Task create(Task task) {
+
         return this.repository.save(task);
     }
 
     @Override
     public Task read(Integer integer) {
+
         return this.repository.findById(integer).orElseGet(null);
     }
 
