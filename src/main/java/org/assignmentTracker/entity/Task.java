@@ -1,16 +1,26 @@
 package org.assignmentTracker.entity;
 
+import javax.persistence.Embeddable;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import java.util.Objects;
+
 /**
  *
  * @author: Caleb Ruiters
  * student number: 215169751
  * */
 
+@Entity
+@Embeddable
 public class Task {
-    private int taskId, assignmentId, memberId;
-    private long students;
+    @Id
+    private int taskId;
+    private int assignmentId;
+    private int memberId;
+    private long studentId;
 
-    private Task() {
+    protected Task() {
     }
 
     public int getTaskId() {
@@ -21,8 +31,8 @@ public class Task {
         return assignmentId;
     }
 
-    public long getStudents() {
-        return students;
+    public long getStudentId() {
+        return studentId;
     }
 
     public int getMemberId() {
@@ -48,7 +58,7 @@ public class Task {
             return this;
         }
 
-        public Builder setStudents(long students) {
+        public Builder setStudentId(long students) {
             this.students = students;
             return this;
         }
@@ -57,7 +67,7 @@ public class Task {
             task.assignmentId = this.assignmentId;
             task.memberId = this.memberId;
             task.taskId = this.taskId;
-            task.students = this.students;
+            task.studentId = this.students;
 
             return build();
         }
@@ -66,7 +76,7 @@ public class Task {
             task.assignmentId = this.assignmentId;
             task.memberId = this.memberId;
             task.taskId = this.taskId;
-            task.students = this.students;
+            task.studentId = this.students;
 
             return this;
         }
@@ -78,7 +88,20 @@ public class Task {
                 "TaskId=" + taskId +
                 ", AssignmentId=" + assignmentId +
                 ", MemberId=" + memberId +
-                ", students=" + students +
+                ", students=" + studentId +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Task task = (Task) o;
+        return taskId == task.taskId;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(taskId);
     }
 }
