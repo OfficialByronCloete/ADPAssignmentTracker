@@ -7,4 +7,5 @@ import java.util.Set;
 
 public interface IChoiceService extends IService<Choice, Integer> {
     Set<Choice> getAll();
+    Set<Choice> getByName(String name);
 }

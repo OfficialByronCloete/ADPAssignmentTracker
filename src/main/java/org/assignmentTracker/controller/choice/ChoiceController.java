@@ -31,16 +31,19 @@ public class ChoiceController {
 
     @PostMapping("/create")
     public Choice create(@RequestBody Choice choice){
-        List<Vote> voteList = new ArrayList<>();
-        voteList.add(VoteFactory.createVote(UserFactory.createUser("Kruben", "Naidoo", "ilovecode", "knaidoo@cput.ac.za")));
-        Choice newChoice = ChoiceFactory.createChoice("AppDve 3", voteList);
-        choiceService.create(choice);
-        return choice;
+       Choice newChoice = ChoiceFactory.createChoice(choice.getName(), choice.getVotes());
+        return choiceService.create(newChoice);
     }
 
     @GetMapping("/read/{id}")
     public Choice read(@PathVariable int id){
         return choiceService.read(id);
+    }
+
+    @GetMapping("/read/name")
+    public Set searchByName(String name)
+    {
+        return choiceService.getByName(name);
     }
 
     @PostMapping("/update")
