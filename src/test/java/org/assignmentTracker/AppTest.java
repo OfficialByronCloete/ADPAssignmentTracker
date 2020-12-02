@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 
-@SpringBootApplication
+/* @SpringBootApplication
 public class AppTest 
 {
 
@@ -19,3 +19,5 @@ public class AppTest
 
 
 }
+
+ */

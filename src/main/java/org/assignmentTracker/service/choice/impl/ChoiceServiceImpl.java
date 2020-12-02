@@ -23,6 +23,13 @@ public class ChoiceServiceImpl implements IChoiceService {
     }
 
     @Override
+    public Set<Choice> getByName(String name) {
+        Set<Choice> choices = getAll();
+        choices.removeIf(choice -> !choice.getName().equalsIgnoreCase(name));
+        return choices;
+    }
+
+    @Override
     public Choice create(Choice choice) {
         return this.choiceRepository.save(choice);
     }
@@ -31,6 +38,8 @@ public class ChoiceServiceImpl implements IChoiceService {
     public Choice read(Integer integer) {
         return this.choiceRepository.findById(integer).orElseGet(null);
     }
+
+
 
     @Override
     public Choice update(Choice choice) {

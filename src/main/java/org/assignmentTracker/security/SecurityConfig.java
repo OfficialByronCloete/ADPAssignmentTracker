@@ -59,12 +59,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers(HttpMethod.DELETE, "/Member/delete/**").hasRole(ADMIN_ROLE)
                 .antMatchers(HttpMethod.GET, "/Member/read/**", "/Member/all/").hasRole(USER_ROLE)
 
-                .antMatchers(HttpMethod.GET, "/choice/read/").hasRole(ADMIN_ROLE)
-                .antMatchers(HttpMethod.GET, "/choice/all").hasRole(ADMIN_ROLE)
-                .antMatchers(HttpMethod.POST, "/choice/create/").hasRole(ADMIN_ROLE)
-                .antMatchers(HttpMethod.POST, "/choice/update/").hasRole(ADMIN_ROLE)
-                .antMatchers(HttpMethod.GET, "/choice/read/").hasRole(USER_ROLE)
-                .antMatchers(HttpMethod.GET, "/choice/all").hasRole(USER_ROLE)
+                .antMatchers(HttpMethod.GET, "/choice/read/**").hasRole(ADMIN_ROLE)
+                .antMatchers(HttpMethod.GET, "/choice/all/**").hasRole(ADMIN_ROLE)
+                .antMatchers(HttpMethod.POST, "/choice/create/**").hasRole(ADMIN_ROLE)
+                .antMatchers(HttpMethod.POST, "/choice/update/**").hasRole(ADMIN_ROLE)
+                .antMatchers(HttpMethod.GET, "/choice/read/**").hasRole(USER_ROLE)
+                .antMatchers(HttpMethod.GET, "/choice/all/**").hasRole(USER_ROLE)
 
                 .antMatchers(HttpMethod.POST, "/subject/create").hasRole(ADMIN_ROLE)
                 .antMatchers(HttpMethod.POST, "/note/create").hasRole(USER_ROLE)
